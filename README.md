@@ -17,13 +17,15 @@ Scripts for augmenting the **Mental Health Conversational Data** to enhance trai
 Contains scripts and files related to the fine-tuning and evaluation of DistilBERT for intent classification.
 
 - **Key Files:**
-  - `app.py`: Flask API script for serving the DistilBERT model.
+  - `app.py`: Chatbot function for testing the DistilBERT model.
   - `data_splitting.py`: Splits data into training and testing sets.
   - `new_intents.json`: Contains additional intents and patterns.
-  - `saved_model/`: Directory storing the fine-tuned DistilBERT model.
+  - **Note:** Large model files are excluded (refer to `.gitignore`).
 
 - **Dataset Used:** Expanded **Mental Health Conversational Data**.
-- **Purpose:** Intent classification with 79 intents.
+
+- **Purpose:** Intent classification with 103 intents.
+  
 
 ---
 
@@ -32,6 +34,7 @@ Scripts and models for emotion detection using a BERT-based classifier.
 
 - **Key Files:**
   - `emotion_analysis1.py`: Code for training and evaluating the emotion classifier.
+  - **Excluded:** Large model files and datasets are not included in the repository.
   - **Dataset Used:** **Empathetic Dialogues** dataset.
   - **Purpose:** Identifies user emotions (e.g., happiness, sadness) to improve chatbot responses.
 
@@ -63,8 +66,8 @@ Notebooks for training and experimenting with various models on Google Colab.
 Contains the fine-tuned GPT-2 model and associated files.
 
 - **Key Files:**
-  - `gpt2_ready_dataset.txt`: Training data formatted as `User:` and `Bot:` dialogues.
-  - `cached_lm_GPT2Tokenizer...`: Tokenizer cache for optimized model inference.
+  - `train.py`: Script for fine-tuning GPT-2.
+  - **Excluded:** Checkpoints and large model files are not included in the repository.
   - **Model Used:** GPT-2 fine-tuned on expanded **Mental Health Conversational Data**.
 
 - **Purpose:** Generates empathetic and contextually relevant responses for Therabot.
@@ -82,40 +85,17 @@ Scripts for scraping online data to augment training datasets.
 Stores evaluation metrics and test results from various models.
 
 - **Key Files:**
-  - `validation_loss.csv`: Tracks model performance across epochs.
-  - `response_samples.txt`: Sample outputs from fine-tuned models.
+  - **Excluded:** Model checkpoints and other large files are not included.
 - **Purpose:** Provides insights into model accuracy, validation loss, and response quality.
 
 ---
 
 ### **9. Supporting Files**
 - `intents.json`: A JSON file defining the intents, patterns, and responses for training intent classification models.
-- `label_encoder.pkl`: Used for encoding and decoding intent labels in training and prediction.
+- **Excluded:** Large files such as `label_encoder.pkl` are not included in the repository.
 
 ---
 
-## **Models and Datasets**
-
-### **1. GPT-2**
-- **Dataset Used:** Expanded **Mental Health Conversational Data**.
-- **Purpose:** Generates empathetic responses aligned with user input.
-
-### **2. DialoGPT**
-- **Dataset Used:** **Counsel-Chat** dataset.
-- **Purpose:** Multi-turn conversations. Limited by dataset constraints.
-
-### **3. DistilBERT**
-- **Dataset Used:** Expanded **Mental Health Conversational Data**.
-- **Purpose:** Intent classification for routing conversations effectively.
-
-### **4. Custom Neural Network**
-- **Dataset Used:** Original **Mental Health Conversational Data**.
-- **Purpose:** Lightweight intent classification for quick predictions.
-
-### **5. Emotion Classifier**
-- **Model Used:** BERT-based classifier.
-- **Dataset Used:** **Empathetic Dialogues**.
-- **Purpose:** Identifies user emotions to enhance response relevance.
 
 ---
 
@@ -123,4 +103,4 @@ Stores evaluation metrics and test results from various models.
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/Therabot.git
+   git clone https://github.com/ilaydaserin/therabot-project.git
