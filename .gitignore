@@ -1,0 +1,32 @@
+# Büyük model dosyalarını hariç tut
+distilbert-newintents/results/
+distilbert-newintents/saved_model/
+emotion_analysis1/emotion_analysis_model/
+gpt2-fine_tuned_newintents/gpt2-fine_tuned_newintents_model/
+gpt2-fined_tuned_again/gpt2-finetuned/
+results/
+gpt2-fine_tuned_newintents/cached_lm_GPT2Tokenizer_128_gpt2_ready_dataset.txt
+
+# Geçici sistem dosyaları
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Çalışma sonuçları ve log dosyaları
+*.log
+*.safetensors
+
+# Model checkpoint dosyaları
+*.pt
+*.bin
+*.pkl
+
+
+# Özel dosyalar
+label_encoder.pkl
+
+#büyük csv dosyaları
+emotion_analysis1/emotion-emotion_69k.csv
+emotion_analysis1/prepared_dataset.csv
+emotion_analysis1/test_data.csv
+emotion_analysis1/train_data.csv
