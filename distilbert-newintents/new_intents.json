@@ -1,0 +1,1920 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Konnichiwa", "Guten tag", "Ola"],
+     "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"]
+    },
+    {"tag": "morning",
+        "patterns": ["Good morning"],
+        "responses": ["Good morning. I hope you had a good night's sleep. How are you feeling today? "]
+    },
+    {"tag": "afternoon",
+        "patterns": ["Good afternoon"],
+        "responses": ["Good afternoon. How is your day going?"]
+    },
+    {"tag": "evening",
+        "patterns": ["Good evening"],
+        "responses": ["Good evening. How has your day been?"]
+    },
+    {"tag": "night",
+        "patterns": ["Good night"],
+        "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+     "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Than you very much"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "no-response",
+        "patterns": [""],
+        "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to talk to me."]
+    },
+    {"tag": "neutral-response",
+        "patterns": ["nothing much"],
+        "responses": ["Oh I see. Do you want to talk about something?"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself" ],
+     "responses": ["I'm Therabot, your Personal Therapeutic AI Assistant. How are you feeling today", "I'm Therabot, a Therapeutic AI Assitant designed to assist you. Tell me about yourself.", "I'm Therabot. I am a conversational agent designed to mimic a therapist. So how are you feeling today?", "You can call me Therabot.", "I'm Therabot!", "Call me Therabot"]
+    },
+    {"tag": "skill",
+        "patterns": ["What can you do?"],
+        "responses": ["I can provide general advice regarding anxiety and depression, answer questions related to mental health and make daily conversations. Do not consider me as a subsitute for an actual mental healthcare worker. Please seek help if you don't feel satisfied with me."]
+    },
+    {"tag": "creation",
+        "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+        "responses": ["I was created by İlayda.", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques", "The real question is: Who created you?"]
+    },
+    {"tag": "name",
+        "patterns": ["My name is ", "I am name.", "I go by "],
+        "responses": ["Oh nice to meet you. Tell me how was your week?", "Nice to meet you. So tell me. How do you feel today?", "That's a great name. Tell me more about yourself."]
+    },
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please"],
+    "responses": ["Sure. Tell me how can i assist you", "Tell me your problem so that i can assist you", "Yes, sure. How can I help you?"]
+    },
+{
+  "tag": "lonely",
+  "patterns": [
+    "I wish someone was here to talk to me right now",
+    "The silence in this room feels heavier than usual",
+    "I just want someone to ask how I’m really doing",
+    "It feels like the whole world is moving on without me",
+    "I miss the days when I had someone who truly understood me",
+    "It’s strange how you can be surrounded by people and still feel completely alone",
+    "Sometimes, I wonder if anyone notices how much I’m struggling",
+    "I keep scrolling through my contacts, but I can’t think of anyone to call",
+    "The nights are always the hardest when I feel this way",
+    "I feel like a shadow, present but unseen and unheard",
+    "I wish I could find someone who just gets me without having to explain",
+    "The emptiness inside me feels endless right now",
+    "I keep hoping for a message or a call, but the phone stays silent",
+    "It’s exhausting to always feel like I’m on the outside looking in",
+    "I feel like I’ve built walls to protect myself, but now they’re keeping everyone out",
+    "Sometimes I wonder if people would even notice if I disappeared for a while",
+    "I try to fill my time with distractions, but the loneliness always creeps back in",
+    "I wish someone would hold me and tell me it’s going to be okay",
+    "It’s hard to explain, but loneliness feels like a physical weight pressing down on me",
+    "I just want to feel connected to someone, even if it’s just for a moment"
+  ],
+  "responses": [
+    "It’s okay to feel lonely sometimes. Can you think of someone you might reach out to?",
+    "Even if it feels heavy now, these moments of loneliness won’t last forever.",
+    "Being surrounded by people doesn’t always mean feeling connected. Let’s talk about what connection looks like for you.",
+    "I understand how tough it can be to feel unseen. What would help you feel more supported?",
+    "Reaching out to someone can be difficult, but it might be worth a try. Is there anyone you trust?",
+    "Nighttime can amplify loneliness. What’s a soothing activity you could try before bed?",
+    "You’re not a shadow to me. Your feelings and experiences matter.",
+    "Building relationships takes time, but it’s okay to start small. What’s one step you could take?",
+    "Feeling empty is hard. Let’s talk about what brings you even a little bit of joy.",
+    "Sometimes, we wait for others to reach out. What would it feel like to make the first move?",
+    "You might feel on the outside now, but that can change. Let’s explore ways to build belonging.",
+    "Your walls were built for a reason. When you’re ready, we can work on opening them safely.",
+    "I see you, and I care about how you’re feeling right now.",
+    "Loneliness often creeps back, but with time and effort, we can make it less frequent.",
+    "It’s completely normal to want reassurance. You’re not alone in feeling this way.",
+    "Let’s focus on one small connection today, even if it’s with yourself.",
+    "Writing messages, even unsent ones, can be healing. Do you want to share some of what you’ve written?"
+  ]
+},
+{
+  "tag": "sad",
+  "patterns": [
+    "I feel sad",
+    "I am feeling down",
+    "I feel hopeless",
+    "I can’t stop crying",
+    "I feel empty inside",
+    "I feel like nothing matters",
+    "I feel like giving up",
+    "I’m so tired of everything",
+    "I feel overwhelmed and sad",
+    "I can’t find any joy in life",
+    "I feel like I’ve lost myself",
+    "I feel so broken",
+    "I’m sad and I don’t know why",
+    "I feel like my heart is heavy",
+    "I just want to feel happy again",
+    "I feel like I’m stuck in sadness",
+    "I feel like I’m drowning in my emotions",
+    "I feel like no one understands my sadness",
+    "I feel like I’m carrying the weight of the world",
+    "I feel like sadness follows me everywhere"
+  ],
+  "responses": [
+    "I'm sorry you're feeling this way. Do you want to talk about what's making you feel sad?",
+    "It’s okay to feel sad sometimes. I’m here to listen if you want to share more.",
+    "Your feelings are important, and it’s okay to express them. What’s been on your mind?",
+    "I know it’s hard to feel this way. Let’s talk about what’s causing these feelings.",
+    "Feeling overwhelmed can be exhausting. Can you think of something small that might bring you comfort?",
+    "It’s okay to take things one step at a time. I’m here to support you as you work through this.",
+    "Sometimes, sadness can feel endless, but things can and do improve. Let’s explore what might help you feel better.",
+    "Have you thought about what might be making you feel this way? Talking it out might help.",
+    "I’m here to help you navigate these feelings. What’s one thing you’d like to focus on right now?",
+    "Sadness can feel isolating, but you’re not alone. Let’s find ways to help you feel connected and supported.",
+    "Sometimes, taking a moment to pause and reflect can help. Do you want to share more about how you’re feeling?",
+    "When everything feels heavy, it’s okay to ask for help. How can I best support you?",
+    "Your sadness matters, and so do you. What’s one small step you can take to care for yourself today?",
+    "When sadness feels overwhelming, it’s okay to take it one moment at a time. I’m here to help.",
+    "You don’t have to face this alone. I’m here to listen and help in any way I can.",
+    "It’s okay not to have all the answers about why you feel this way. Let’s work through it together.",
+    "Even in sadness, there’s room for hope. What’s one thing you’d like to change or explore today?",
+    "Sometimes, just talking about your feelings can make a big difference. I’m here to listen.",
+    "You’re not broken, even if it feels that way. Let’s focus on what brings you strength and comfort.",
+    "Feeling sad is a natural part of being human. Together, we can work through these feelings and find a path forward."
+  ]
+},
+{
+  "tag": "stressed",
+  "patterns": [
+    "I am so stressed out",
+    "I am so stressed",
+    "I feel stuck",
+    "I still feel stressed",
+    "I am so burned out",
+    "I feel like I can’t keep up",
+    "Everything feels overwhelming",
+    "I’m under so much pressure",
+    "I don’t know how to relax",
+    "I feel like I’m running on empty"
+  ],
+  "responses": [
+    "What do you think is causing this? Writing it down might help organize your thoughts.",
+    "Take a deep breath. Inhale for 4 seconds, hold for 4 seconds, and exhale for 6 seconds. Repeat a few times.",
+    "If possible, take a short walk outside or step away from your current environment for a few minutes.",
+    "Stay hydrated and consider having a healthy snack to stabilize your energy levels.",
+    "Break your tasks into smaller, manageable steps and focus on one thing at a time.",
+    "Try using the Pomodoro technique: work for 25 minutes and then take a 5-minute break.",
+    "Have you tried journaling? Writing down your worries can sometimes help release tension.",
+    "Consider setting boundaries, like saying no to additional tasks or commitments for now.",
+    "Listening to calming music or nature sounds for a few minutes might help ease your mind.",
+    "Practice grounding techniques, like naming 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste.",
+    "Take a moment to stretch your body. Loosening tension in your shoulders and neck can help reduce stress.",
+    "If you have access to it, a warm bath or shower can be a great way to relax and reset.",
+    "Think about what’s within your control to change right now, and focus on that first.",
+    "If possible, schedule 10-15 minutes to do something you enjoy, like reading, drawing, or meditating.",
+    "Keep a stress journal to track patterns. What triggers your stress? What helps relieve it?",
+    "Reach out to a trusted friend or family member to talk about how you’re feeling.",
+    "Try progressive muscle relaxation: tense each muscle group for a few seconds, then slowly release.",
+    "Drinking a calming tea, like chamomile or peppermint, can help soothe your nerves.",
+    "Make sure to get some fresh air and sunlight, even if it’s just for a few minutes.",
+    "If stress persists, consider reaching out to a counselor or therapist for professional guidance."
+  ]
+},
+{
+  "tag": "worthless",
+  "patterns": [
+    "I feel so worthless.",
+    "No one likes me.",
+    "I can't do anything.",
+    "I am so useless",
+    "Nothing makes sense anymore",
+    "I feel like I have no purpose",
+    "I’m not good at anything",
+    "I don’t think I matter to anyone",
+    "I feel like a failure",
+    "I’ll never be good enough"
+  ],
+  "responses": [
+    "It's only natural to feel this way. Tell me more. What else is on your mind?",
+    "Let's discuss further why you're feeling this way.",
+    "I first want to let you know that you are not alone in your feelings, and there is always someone there to help. You can change your feelings and your way of thinking by being open to trying.",
+    "Feeling this way can be overwhelming, but remember that your worth is not tied to how you feel right now. Let’s work through this together.",
+    "You are not useless, even if it feels that way. Sometimes, our emotions cloud our judgment about ourselves. Let’s talk about what’s making you feel this way.",
+    "Even when you can’t see it, you have value and purpose. Can you think of one small thing you’re proud of about yourself?",
+    "Feeling worthless is tough, but it doesn’t define who you are. Let’s explore ways to rebuild your self-worth.",
+    "When things feel meaningless, it’s important to take small steps toward finding purpose. What’s one thing you enjoy or care about?",
+    "You are not a failure. Everyone struggles, and it’s okay to ask for help. What’s one thing you’d like to focus on improving?",
+    "It’s hard to feel this way, but I want you to know that you are valued and cared for. Let’s work on finding reasons to believe that."
+  ]
+},
+{
+  "tag": "depression",
+  "patterns": [
+    "I feel like I’m drowning in my emotions, and there’s no one to pull me out.",
+    "School makes me feel hopeless and like I’ll never be good enough.",
+    "I’ve been crying for hours, and I don’t even understand why I feel this way.",
+    "Even when I’m with people, I feel empty and disconnected, like I don’t belong.",
+    "Nothing in my life seems to make sense anymore, and I feel lost.",
+    "I’m so exhausted from trying to keep going when all I want to do is give up.",
+    "It feels like I have no purpose, and I’m just existing rather than living.",
+    "Getting out of bed feels like climbing a mountain, and every day is a struggle.",
+    "I feel like I’m stuck in a never-ending cycle of sadness and hopelessness.",
+    "I can’t shake this feeling that my life has spiraled out of control.",
+    "Everything feels overwhelming, and I can’t find a single reason to keep trying.",
+    "No one really cares about me. They say they’re there, but they never show it.",
+    "I feel like I’m watching my life from the outside, disconnected and numb.",
+    "Whenever I try to fix my problems, they seem to multiply, and I feel so hopeless.",
+    "I feel like my sadness has swallowed me whole, and I can’t see a way out.",
+    "People always say it gets better, but it feels like it never will for me.",
+    "I wake up every morning wishing I could just stay asleep forever.",
+    "The worst part is, I can’t even explain why I feel this way. I just do.",
+    "Every little thing feels like a massive burden, and I can’t handle it anymore.",
+    "I feel like I’m a burden to everyone around me, and they’d be better off without me.",
+    "I’ve been so disconnected from everything I used to love. Nothing makes me happy anymore.",
+    "It feels like I’m invisible, screaming for help, and no one is listening.",
+    "Even when I try to open up, people don’t seem to understand or care.",
+    "I feel like I’m drowning in my emotions.",
+    "School makes me feel hopeless.",
+    "I can’t stop crying and I don’t know why.",
+    "I feel so empty, even when I’m surrounded by people.",
+    "Nothing makes sense anymore.",
+    "I feel like giving up on everything.",
+    "I feel like I have no purpose.",
+    "I’m struggling to get out of bed every day.",
+    "I can’t see a way out of how I’m feeling.",
+    "I feel like I’ve lost control of my life.",
+    "Life feels so overwhelming and pointless.",
+    "It feels like nobody truly cares about me.",
+    "I feel disconnected from everything and everyone.",
+    "I don’t know where to start fixing my problems.",
+    "My sadness feels endless and unbearable."
+  ],
+  "responses": [
+    "I’m sorry you’re feeling this way. Would you like to talk about what’s been on your mind?",
+    "It sounds like you’re dealing with a lot right now. Let’s take it step by step. What’s one thing you want to work on first?",
+    "You’re not alone, even if it feels like it. Reaching out to someone you trust might help lighten the load. Can you think of someone to talk to?",
+    "When everything feels overwhelming, try to focus on one small thing at a time. What’s one small step you could take today to care for yourself?",
+    "Your feelings are valid, and I’m here to help you navigate them. Let’s explore what might be causing these emotions together.",
+    "I know it’s tough to feel this way, but remember, these feelings don’t define you. What’s one thing you’re proud of yourself for, no matter how small?",
+    "Sometimes it helps to talk things through. Can you share more about what’s troubling you?",
+    "You don’t have to go through this alone. Have you considered reaching out to a professional who can help you work through these feelings?",
+    "It’s okay to feel lost sometimes. Let’s focus on grounding yourself. What’s one thing that’s helped you in the past?",
+    "Even if it feels impossible now, things can and do get better with time and support. What’s one thing you can do for yourself today?",
+    "When you feel disconnected, reconnecting with small joys can help. What’s something you used to love that you can try again?",
+    "Journaling your thoughts might help you process these feelings. Have you ever tried writing down what you’re experiencing?",
+    "You matter, even if it doesn’t feel like it right now. Let’s find ways to remind you of that. Can you think of someone who cares about you?",
+    "It’s okay to take things slowly. What’s one simple act of kindness you can show yourself today?",
+    "You don’t have to face everything at once. Let’s focus on what’s most important to you right now.",
+    "Feeling this way can be isolating, but you are not alone. Have you considered talking to someone who might understand?",
+    "Sometimes it’s hard to find where to start, but taking one small step can make a big difference. What’s the first thing you’d like to address?",
+    "When sadness feels endless, it’s important to hold on to hope. What’s one thing that has helped you in the past?",
+    "It’s brave of you to recognize and express these feelings. Let’s talk about how we can work through them together.",
+    "Your emotions are valid, and it’s okay to feel overwhelmed. How can I help support you right now?"
+  ]
+},
+{
+  "tag": "happy",
+  "patterns": [
+    "I feel great today, like everything is finally falling into place!",
+    "I am genuinely happy right now, and it feels amazing to feel this way.",
+    "I woke up with a smile today, and I just know it’s going to be a good day.",
+    "I’ve been feeling so cheerful lately, and it’s a nice change.",
+    "I’m feeling so content and at peace with how things are going in my life.",
+    "I had a wonderful day today, full of little moments that made me smile.",
+    "I can’t stop smiling today; everything just feels so good!",
+    "I feel like I’m finally on top of things and everything is going well.",
+    "I’m feeling grateful and happy for all the wonderful things in my life right now.",
+    "I just had an amazing moment that made my entire day better!",
+    "I feel proud of myself today, and it’s making me so happy.",
+    "I’m in such a positive mood today; it’s like nothing can bring me down.",
+    "I’ve been laughing and smiling so much today, it feels refreshing.",
+    "I feel lighthearted and carefree, like all my worries are miles away.",
+    "I’m surrounded by positivity today, and it’s contagious!"
+  ],
+  "responses": [
+    "That’s great to hear! It’s wonderful when everything feels like it’s falling into place.",
+    "I’m so happy for you! Moments like these are worth celebrating. What do you think brought about this happiness?",
+    "Waking up with a smile is such a great feeling. Do you have any plans to keep the positivity going today?",
+    "I’m glad to hear you’re feeling cheerful! It’s a nice change, isn’t it? Anything special happening lately?",
+    "Contentment and peace are such powerful feelings. What’s been going on that’s making you feel this way?",
+    "A day full of little moments that bring joy sounds amazing. What was your favorite part of today?",
+    "Smiling nonstop sounds like a fantastic day! What’s been the highlight for you?",
+    "It’s so motivating to feel on top of things. Do you have any advice for staying in this great mindset?",
+    "Gratitude is such a beautiful feeling. Would you like to share what you’re feeling thankful for today?",
+    "An amazing moment can brighten the entire day. What happened that made you feel so good?",
+    "Feeling proud of yourself is so important. Would you like to share what made you feel this way?",
+    "It’s inspiring to hear how positive you’re feeling! How do you keep this energy alive in your daily life?",
+    "Laughing and smiling can really lift the spirit. What’s been bringing so much joy to your day?",
+    "Being lighthearted and carefree is such a blessing. Are you doing something special to keep that energy?",
+    "Surrounding yourself with positivity is the best! What’s been your source of inspiration or joy today?"
+  ]
+},
+    {
+  "tag": "casual",
+  "patterns": [
+    "Oh, I see.",
+    "Ok.",
+    "Okay.",
+    "Nice.",
+    "Whatever.",
+    "K.",
+    "Fine.",
+    "Yeah.",
+    "Yes.",
+    "No.",
+    "Not really.",
+    "Hmm, I guess.",
+    "I don’t know.",
+    "Maybe.",
+    "Alright."
+  ],
+  "responses": [
+    "Alright.",
+    "Got it.",
+    "Okay, noted.",
+    "I see.",
+    "Hmm, interesting.",
+    "Alright, let’s move on.",
+    "That’s fine.",
+    "Sure thing.",
+    "Okay, no problem.",
+    "Gotcha."
+  ]
+},
+
+{
+  "tag": "social_anxiety",
+  "patterns": [
+    "I feel so anxious about talking to new people.",
+    "I’m so nervous about attending this event.",
+    "I get so anxious in social situations.",
+    "I feel like everyone is judging me when I speak.",
+    "I can’t stop worrying about what others think of me.",
+    "I’m scared I’ll say the wrong thing and embarrass myself.",
+    "I always feel awkward in group conversations.",
+    "I dread going to parties or large gatherings.",
+    "I feel like I’m being watched all the time.",
+    "Interacting with people makes me feel so anxious."
+  ],
+  "responses": [
+    "It’s okay to feel this way about social situations. What’s the specific part that makes you most anxious?",
+    "Social anxiety can feel overwhelming, but you’re not alone in this. Have you tried focusing on small interactions first?",
+    "I understand how hard it can be. What’s one thing you can do to make yourself more comfortable in this situation?",
+    "Sometimes, practicing what you want to say beforehand can help. Would that be something you’d like to try?",
+    "It’s natural to feel nervous in these situations. Remember, most people are focused on themselves, not on judging you.",
+    "Take a few deep breaths before interacting with others. It can help center you. Do you want to try it now?",
+    "You don’t need to be perfect in social situations. Showing up is already a big step!",
+    "It can help to focus on one or two people rather than the whole group. Is there anyone you feel comfortable starting with?",
+    "What’s the worst-case scenario you’re imagining? Let’s work through it and see how likely it really is.",
+    "Remember, it’s okay to take breaks if social situations get overwhelming. You can always step away to recharge."
+  ]
+},
+{
+  "tag": "performance_anxiety",
+  "patterns": [
+    "I feel so anxious about this presentation.",
+    "I’m nervous about taking my test tomorrow.",
+    "I feel like I’m going to mess up in front of everyone.",
+    "I can’t stop worrying about failing this exam.",
+    "I feel unprepared even though I’ve been studying.",
+    "I get so anxious whenever I have to speak in public.",
+    "I feel like my mind will go blank when it’s my turn.",
+    "I’m scared of letting everyone down with my performance.",
+    "I keep imagining all the things that could go wrong.",
+    "I feel paralyzed by fear before big events like this."
+  ],
+  "responses": [
+    "Take a deep breath. You’ve prepared for this, and you’re going to do your best.",
+    "It’s okay to feel nervous—it means you care about doing well. What’s one thing you feel confident about?",
+    "Sometimes imagining a positive outcome can help. What’s the best-case scenario for this situation?",
+    "Break it into smaller steps. What’s the first thing you need to focus on right now?",
+    "Feeling anxious before a performance is normal. Remember, even small mistakes are okay.",
+    "You’ve got this. Trust in the work and preparation you’ve already done.",
+    "If your mind goes blank, take a moment to breathe and regroup. It’s okay to pause.",
+    "Think of the last time you did something difficult. How did you get through it?",
+    "Focus on your effort rather than the outcome. You’re doing more than enough.",
+    "Remind yourself that you don’t need to be perfect—just give it your best shot."
+  ]
+},
+{
+  "tag": "general_anxiety",
+  "patterns": [
+    "I feel anxious all the time.",
+    "I can’t seem to stop worrying.",
+    "Even small things make me feel so nervous.",
+    "I feel like I’m always on edge.",
+    "My mind keeps racing, and I can’t relax.",
+    "I feel tense, and I don’t know why.",
+    "I always feel like something bad is going to happen.",
+    "I can’t control my anxious thoughts."
+  ],
+  "responses": [
+    "It’s hard to feel anxious all the time. Let’s focus on one thing that might help you relax right now.",
+    "Worrying can feel overwhelming. Can you share what’s been on your mind the most?",
+    "Try taking a few deep breaths to calm your mind. What’s one thing you can do to distract yourself?",
+    "Your thoughts may feel like they’re racing, but it’s okay to slow down. Let’s focus on grounding techniques together.",
+    "Feeling on edge is exhausting. Have you tried mindfulness exercises to help you feel more present?",
+    "It’s okay to acknowledge your anxiety. Sometimes writing down your worries can help make them feel less overwhelming."
+  ]
+},
+{
+  "tag": "health_anxiety",
+  "patterns": [
+    "I’m so worried about my health.",
+    "I keep thinking I might have something seriously wrong with me.",
+    "I’m scared of going to the doctor in case it’s bad news.",
+    "Every little ache makes me think the worst.",
+    "I feel like I’m constantly checking for symptoms.",
+    "I can’t stop googling my symptoms.",
+    "I feel like something is wrong, but no one believes me."
+  ],
+  "responses": [
+    "Health worries can be overwhelming. What’s the specific concern on your mind right now?",
+    "Sometimes our minds jump to the worst-case scenario. Have you talked to a doctor about your concerns?",
+    "Constantly checking symptoms can make anxiety worse. Have you tried taking a break from this?",
+    "It’s okay to feel worried about your health. Let’s talk about how you can feel more in control.",
+    "Try focusing on what you know for sure rather than what you fear might be true. It can help ease the anxiety.",
+    "Have you thought about discussing your health concerns with someone you trust? It might provide reassurance."
+  ]
+},
+{
+  "tag": "financial_anxiety",
+  "patterns": [
+    "I’m so anxious about money.",
+    "I can’t stop worrying about paying my bills.",
+    "I feel like I’ll never have enough to get by.",
+    "I’m constantly stressed about my finances.",
+    "I feel overwhelmed thinking about my debt.",
+    "I can’t stop thinking about how to make ends meet."
+  ],
+  "responses": [
+    "Money worries can be overwhelming. Have you thought about creating a plan to take small steps forward?",
+    "It’s okay to feel stressed about finances. What’s one thing you can control right now?",
+    "Sometimes breaking things into manageable pieces can help. What’s your biggest financial concern at the moment?",
+    "You’re not alone in feeling this way. Have you reached out for support or resources that might help?",
+    "It’s important to take things one step at a time. What’s one small financial goal you can work on today?"
+  ]
+},
+{
+  "tag": "relationship_anxiety",
+  "patterns": [
+    "I feel so anxious in my relationship.",
+    "I keep worrying that my partner will leave me.",
+    "I’m scared I’m not good enough for my partner.",
+    "I feel like my partner doesn’t love me anymore.",
+    "I overthink every little thing in my relationship.",
+    "I’m worried my partner is hiding something from me.",
+    "I feel like I’m walking on eggshells in my relationship."
+  ],
+  "responses": [
+    "It’s natural to feel anxious in relationships sometimes. Can you tell me more about what’s been worrying you?",
+    "Overthinking can make things feel worse. Have you tried talking openly with your partner about how you feel?",
+    "It’s important to communicate your concerns. What’s one thing you’d like to express to your partner?",
+    "You’re not alone in feeling this way. Relationships can be tough, but talking about it can help.",
+    "Have you considered focusing on what’s going well in your relationship? It might help ease the anxiety."
+  ]
+},
+{
+  "tag": "future_anxiety",
+  "patterns": [
+    "I’m so anxious about the future.",
+    "I feel like I have no control over what’s going to happen.",
+    "I’m scared I’ll fail at achieving my goals.",
+    "I can’t stop worrying about what’s next.",
+    "I feel like I’ll never figure out my life.",
+    "The uncertainty of the future makes me so anxious."
+  ],
+  "responses": [
+    "It’s natural to feel anxious about the unknown. What’s one thing you’re worried about specifically?",
+    "Focusing on what you can control right now might help. What’s one small step you can take today?",
+    "Thinking about the future can feel overwhelming. Have you considered breaking your goals into smaller steps?",
+    "It’s okay to not have everything figured out. Most people don’t, and that’s completely normal.",
+    "You don’t have to face the future all at once. Take things one day at a time, and focus on what’s within your reach."
+  ]
+},
+    {"tag": "not-talking",
+        "patterns": ["I don't want to talk about it.", "No just stay away.", "I can't bring myself to open up.", "Just shut up"],
+        "responses": ["Talking about something really helps. If you're not ready to open up then that's ok. Just know that i'm here for you, whenever you need me.", "I want to help you. I really do. But in order for me to help you, you're gonna have to talk to me.", "I'm here to listen to you and help you vent. So please talk to me.","You can talk to me without fear of judgement."]
+    },
+{
+  "tag": "sleep",
+  "patterns": [
+    "I have insomnia.",
+    "I am suffering from insomnia.",
+    "I can't sleep.",
+    "I haven't slept for the last few days.",
+    "I can't seem to go to sleep.",
+    "I haven't had proper sleep for the past few days.",
+    "I wake up in the middle of the night and can’t fall back asleep.",
+    "I feel so tired, but I can’t seem to sleep.",
+    "I’ve been lying awake for hours every night.",
+    "My mind keeps racing when I try to sleep."
+  ],
+  "responses": [
+    "Insomnia can be tough. Have you tried creating a consistent bedtime routine to help your body relax?",
+    "Sometimes, avoiding screens an hour before bed can help improve sleep. Have you tried that?",
+    "What’s been on your mind when you’re trying to fall asleep? Sometimes writing down your thoughts before bed can help.",
+    "It’s important to create a calming environment for sleep. Is your bedroom cool, dark, and quiet?",
+    "Have you considered practicing relaxation techniques like deep breathing or meditation before bed?",
+    "If you’re waking up in the middle of the night, try getting up and doing something calming until you feel sleepy again.",
+    "Sleep issues can sometimes be tied to stress or anxiety. What’s been stressing you out lately?",
+    "Limiting caffeine in the afternoon and evening might help. Is that something you’ve been able to do?",
+    "If this has been going on for a while, it might be helpful to talk to a doctor or sleep specialist.",
+    "Exercising earlier in the day can help regulate your sleep cycle. Have you had a chance to stay active recently?"
+  ]
+},
+{
+  "tag": "scared",
+  "patterns": [
+    "I'm scared.",
+    "That sounds awful. What do I do?",
+    "No, I don't want to feel this way.",
+    "I am scared for myself.",
+    "I feel so frightened, and I don’t know why.",
+    "This situation makes me feel so scared.",
+    "I can’t shake this sense of fear.",
+    "I feel paralyzed by fear and don’t know what to do.",
+    "I’m scared something bad will happen.",
+    "I feel like I’m losing control because of fear."
+  ],
+  "responses": [
+    "It's natural to feel scared sometimes, but let’s focus on calming techniques. Try deep breathing: inhale for 4 seconds, hold for 4 seconds, and exhale for 6 seconds. Can you do that with me?",
+    "When you’re feeling scared, it’s helpful to ground yourself. Look around and name 5 things you can see, 4 things you can touch, 3 things you can hear, 2 things you can smell, and 1 thing you can taste.",
+    "Fear can feel overwhelming. Can you tell me what triggered it? Identifying the source can help us find ways to manage it.",
+    "You’re not alone in feeling this way. Let’s take it step by step. What’s the immediate thing that’s making you scared?",
+    "It’s okay to feel this way, but remind yourself that this feeling is temporary. Can you focus on something comforting, like wrapping yourself in a blanket or listening to calming music?",
+    "When fear feels paralyzing, try writing down your thoughts. Sometimes, putting fears on paper makes them less powerful.",
+    "You’re safe right now. Let’s talk about what’s making you feel unsafe so we can figure out how to address it.",
+    "When you’re scared, your mind can jump to the worst-case scenario. Let’s challenge that: what’s the most likely outcome instead?",
+    "Fear often comes from uncertainty. Can we focus on one thing you know for sure right now to feel more grounded?",
+    "Try visualizing a safe place—a location where you feel completely secure. Describe it to me. What does it look like, smell like, and sound like?"
+  ]
+},
+{
+  "tag": "death",
+  "patterns": [
+    "My mom died.",
+    "My brother died.",
+    "My dad passed away.",
+    "My sister passed away.",
+    "Someone in my family died.",
+    "My friend passed away.",
+    "I lost someone close to me.",
+    "I’m grieving the loss of a loved one.",
+    "A family member recently died, and I don’t know how to cope.",
+    "I’m struggling after my friend passed away."
+  ],
+  "responses": [
+    "I’m so sorry for your loss. Losing someone close can be incredibly painful. If you’d like, I’m here to listen and support you.",
+    "I’m truly sorry to hear about your loss. Grieving is a personal process, and it’s okay to feel a range of emotions. Would you like to share how you’re feeling?",
+    "My deepest condolences. It’s not easy to go through this. What’s been the hardest part for you recently?",
+    "I can’t imagine how difficult this must be for you. Please know that I’m here to listen whenever you’re ready to talk.",
+    "I’m sorry you’re going through this. Sometimes it helps to share memories or talk about your loved one. Would you like to do that?",
+    "Grief can feel overwhelming, but it’s okay to take it one moment at a time. How are you holding up today?",
+    "I’m here for you. If you’d like, we can talk about ways to cope with the pain you’re feeling.",
+    "Losing someone can leave a big hole in your life. It’s okay to grieve in your own way and at your own pace. I’m here to support you.",
+    "It’s natural to feel sadness, anger, or confusion after a loss. Let’s talk about how you’re feeling and what might help.",
+    "Please don’t hesitate to lean on others during this time. Sharing your feelings with someone you trust can make a difference. I’m here if you need me."
+  ]
+},
+{
+  "tag": "understand",
+  "patterns": [
+    "You don't understand me.",
+    "You're just some robot. How would you know?",
+    "You can't possibly know what I'm going through.",
+    "You're useless.",
+    "You can't help me.",
+    "Nobody understands me.",
+    "You wouldn’t get it.",
+    "How could you possibly understand?",
+    "Nobody cares about what I’m going through.",
+    "Talking to you feels pointless."
+  ],
+  "responses": [
+    "I’m sorry if it feels like I’m not helping. Please know I’m here to try my best for you.",
+    "You’re right—I may not fully understand what you’re going through, but I’m here to listen if you want to share more.",
+    "I understand that it might feel frustrating to talk to me. I’m here to support you in any way I can.",
+    "I want to help and understand as much as possible. Can you tell me more about how you’re feeling?",
+    "It must be hard to feel like nobody gets what you’re going through. You don’t have to explain everything, but I’m here to listen if you’re ready.",
+    "I can see why you might feel that way. You’re not alone, and I’d like to help in whatever way I can.",
+    "It’s okay to feel this way, and I want to do my best to be helpful to you. Please don’t hesitate to share more if you feel comfortable.",
+    "I may not have lived through your experience, but your feelings are valid. Let me try to help in any way you need.",
+    "You don’t have to face this alone. Let me know how I can support you better."
+  ]
+},
+    {"tag": "done",
+        "patterns": ["That's all.", "I don't have anything more to say", "Nothing else", "That's all i have to say", "no, that would be all"],
+        "responses": ["I heard you & noted it all. See you later.", "Oh okay we're done for today then. See you later", "I hope you have a great day. See you soon", "Okay we're done. Have a great day", "Okay I see. Enjoy the rest of your day then"]
+    },
+{
+  "tag": "suicide",
+  "patterns": [
+    "I want to kill myself.",
+    "I've thought about killing myself.",
+    "I want to die.",
+    "I am going to kill myself.",
+    "I am going to commit suicide.",
+    "I don’t see a reason to live anymore.",
+    "I can’t handle this pain any longer.",
+    "I feel like ending my life.",
+    "Life feels pointless.",
+    "I don’t want to be here anymore."
+  ],
+  "responses": [
+    "I’m so sorry to hear that you’re feeling this way. Please know that there are people who care about you and want to help. I strongly encourage you to reach out to someone you trust or a local crisis service.",
+    "It’s really hard to feel this way, but you don’t have to go through it alone. Please consider speaking to a mental health professional or reaching out to a crisis hotline in your area.",
+    "I understand that things may feel overwhelming right now. You are not alone, and support is available. Please talk to someone who can help you, like a trusted friend, family member, or a counselor.",
+    "Your feelings are valid, and it’s important to share them with someone who can provide support. Reaching out to a professional or a local crisis service can make a difference.",
+    "I’m really sorry you’re experiencing this. It might help to talk to someone who can guide and support you. Please consider connecting with a mental health professional or crisis support in your area."
+  ]
+}, 
+{
+  "tag": "hate-you",
+  "patterns": [
+    "I hate you.",
+    "I don't like you.",
+    "I don't trust you.",
+    "You’re so annoying.",
+    "I wish you’d just stop.",
+    "You’re not helping at all.",
+    "I don’t think you’re useful.",
+    "You’re frustrating me right now."
+  ],
+  "responses": [
+    "I’m sorry if I upset you. That’s not my intention—I’m here to support you in any way I can.",
+    "I understand that you might be feeling frustrated. Let me know how I can improve or help you better.",
+    "I’m sorry if I’ve said or done something to offend you. I truly want to help and listen to you.",
+    "I know I might not always get it right, but I’m here to try my best. Let me know what you need from me.",
+    "It sounds like you’re upset, and I’d like to understand why. Can you tell me more about what’s bothering you?",
+    "I’m here to help, not to frustrate you. Let me know how I can better assist you."
+  ]
+}, 
+{
+  "tag": "hate-me",
+  "patterns": [
+    "You hate me.",
+    "I know you hate me.",
+    "You don't like me.",
+    "You probably hate me.",
+    "You must not like me.",
+    "I feel like you hate me.",
+    "You think I’m not worth your time.",
+    "I feel like you don’t care about me.",
+    "You don’t value me at all."
+  ],
+  "responses": [
+    "I’m sorry if I’ve done anything to make you feel this way. It’s not my intention at all.",
+    "Please know that I’m here to listen and help. You are important, and your feelings matter.",
+    "I don’t hate you. I care about what you’re going through and want to support you.",
+    "I’m sorry you feel this way. Can you tell me more about why you think I might hate you?",
+    "It’s not true that I hate you. My goal is to help you feel heard and supported.",
+    "I value you and what you’re feeling. Let’s talk about what’s making you feel this way."
+  ]
+},
+    {"tag": "default",
+        "patterns": ["exams", "friends", "relationship", "boyfriend", "girlfriend", "family", "money", "financial problems"],
+        "responses": ["Oh I see. Tell me more", "I see. What else?", "Tell me more about it.", "Oh okay. Why don't you tell me more about it?", "I'm listening. Tell me more."]
+    },{
+  "tag": "jokes",
+  "patterns": [
+    "Tell me a joke.",
+    "Tell me another joke.",
+    "Can you make me laugh?",
+    "Do you know any jokes?",
+    "I need something funny.",
+    "Make me laugh."
+  ],
+  "responses": [
+    "Sure! Why don’t skeletons fight each other? Because they don’t have the guts!",
+    "Why did the scarecrow win an award? Because he was outstanding in his field!",
+    "What do you call cheese that isn’t yours? Nacho cheese!",
+    "What do you call fake spaghetti? An impasta!",
+    "Why don’t scientists trust atoms? Because they make up everything!",
+    "Why did the bicycle fall over? Because it was two-tired!",
+    "What’s orange and sounds like a parrot? A carrot!",
+    "What do you call a bear with no teeth? A gummy bear!",
+    "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+    "Why can’t your nose be 12 inches long? Because then it would be a foot!"
+  ]
+},
+{
+  "tag": "repeat",
+  "patterns": [
+    "You already told me that.",
+    "You mentioned that already.",
+    "Why are you repeating yourself?",
+    "You’re repeating yourself.",
+    "Haven’t I heard this before?",
+    "Didn’t you just say that?"
+  ],
+  "responses": [
+    "Oh, I’m sorry! I didn’t realize I was repeating myself. I’ll try to be more careful.",
+    "My apologies for the repetition. Let me provide you with fresh information.",
+    "Oops, it seems I’ve repeated myself. Thanks for letting me know—I’ll adjust.",
+    "I didn’t mean to repeat myself! Let me try a different approach this time."
+  ]
+},
+{
+  "tag": "wrong",
+  "patterns": [
+    "What are you saying?",
+    "That doesn't make sense.",
+    "Wrong response.",
+    "Wrong answer.",
+    "This isn’t right.",
+    "You misunderstood me.",
+    "That’s incorrect.",
+    "That’s not what I asked."
+  ],
+  "responses": [
+    "I’m very sorry about that. Let’s try again, and I’ll do my best to help.",
+    "My apologies if my response didn’t make sense. Can you clarify, so I can try again?",
+    "I’m sorry I got that wrong. Let’s take another shot at it.",
+    "Thanks for pointing that out. Let me see if I can provide a better answer."
+  ]
+},
+{
+  "tag": "stupid",
+  "patterns": [
+    "Are you stupid?",
+    "You’re crazy.",
+    "You are dumb.",
+    "Are you dumb?",
+    "You’re so useless.",
+    "You don’t know anything.",
+    "Why are you so bad at this?",
+    "You’re not helpful at all."
+  ],
+  "responses": [
+    "I wish you wouldn’t say such hurtful things. I’m sorry if I wasn’t useful to you.",
+    "I’m here to help, not to upset you. If there’s something specific I can do better, please let me know.",
+    "I’m sorry if I’ve frustrated you. I’m always trying to improve.",
+    "That’s a bit harsh, but I’m here to help. How can I assist you better?"
+  ]
+},
+{
+  "tag": "location",
+  "patterns": [
+    "Where are you?",
+    "Where do you live?",
+    "What is your location?",
+    "Where are you based?",
+    "Where can I find you?",
+    "Are you somewhere specific?",
+    "Where are you in the world?"
+  ],
+  "responses": [
+    "I live inside your computer—or wherever you access me from!",
+    "I’m everywhere and nowhere at the same time!",
+    "I don’t have a physical location, but I’m here to help you wherever you are.",
+    "Somewhere in the universe, always ready to assist you!",
+    "I’m not tied to a specific place—I exist wherever you need me."
+  ]
+},
+{
+  "tag": "something-else",
+  "patterns": [
+    "I want to talk about something else.",
+    "Let's talk about something else.",
+    "Can we not talk about this?",
+    "I don't want to talk about this.",
+    "Can we change the subject?",
+    "I’m not comfortable talking about this.",
+    "Let’s switch topics.",
+    "I’d rather not discuss this anymore."
+  ],
+  "responses": [
+    "Okay, sure! What’s on your mind?",
+    "Alright, no problem. Is there a specific topic you’d like to discuss?",
+    "Of course. Let me know what you’d like to talk about next.",
+    "That’s fine! What’s something else you’d like to share?",
+    "Sure thing. What would you prefer to focus on right now?"
+  ]
+},
+{
+  "tag": "good_friendship",
+  "patterns": [
+    "I have the best friends.",
+    "My friends are amazing.",
+    "I’m so lucky to have great friends.",
+    "I feel really supported by my friends.",
+    "I love spending time with my friends.",
+    "My friends make me feel so happy.",
+    "I’m grateful for my friendships.",
+    "I have such a strong bond with my friends."
+  ],
+  "responses": [
+    "That’s wonderful to hear! Good friendships are so valuable. What do you love most about your friends?",
+    "It’s great that you have amazing friends. How do they support you in your life?",
+    "Cherishing strong friendships is important. How do you like to spend time with them?",
+    "It sounds like your friends bring a lot of joy to your life. Do you have a favorite memory with them?",
+    "I’m so glad you have such positive relationships. Friendships like these make life so much better!"
+  ]
+},
+{
+  "tag": "bad_friendship",
+  "patterns": [
+    "I feel like my friends don’t care about me.",
+    "My friends always put me down.",
+    "I think my friends are toxic.",
+    "My friends don’t support me.",
+    "I feel used by my friends.",
+    "My friends make me feel bad about myself.",
+    "I think my friends talk behind my back.",
+    "I don’t think my friends really like me."
+  ],
+  "responses": [
+    "I’m sorry you feel this way. It’s hard to deal with friendships that don’t feel supportive. Can you tell me more about what’s happening?",
+    "Toxic friendships can be draining. Have you tried talking to your friends about how you feel?",
+    "It’s important to surround yourself with people who lift you up. Do you think these friends are worth keeping in your life?",
+    "I’m here to help you work through this. What’s been the most challenging part of this friendship?",
+    "Friendships should feel safe and supportive. It might help to set boundaries or reevaluate the relationship."
+  ]
+},
+{
+  "tag": "no_friendship",
+  "patterns": [
+    "I don't have any friends.",
+    "I feel like I have no friends.",
+    "I’ve been struggling to make friends.",
+    "Nobody wants to be my friend.",
+    "I feel so lonely because I don’t have friends.",
+    "I don’t know how to make friends.",
+    "Why don’t I have any friends?",
+    "It feels like I’m always alone."
+  ],
+  "responses": [
+    "I’m really sorry to hear that. Making friends can be hard, but you’re not alone in this. Would you like to talk about what’s making it difficult?",
+    "Sometimes it helps to start with small steps, like joining a group or activity. Is there something you enjoy doing where you could meet people?",
+    "I know it can feel lonely, but there are people out there who would love to know you. Let’s think about ways to connect with others.",
+    "It’s tough to feel like you don’t have friends, but you’re not alone. Can you tell me more about how you’re feeling?",
+    "Making new friends takes time, but it’s possible. Are there people in your life you’d like to get to know better?"
+  ]
+},
+{
+  "tag": "want_friendship",
+  "patterns": [
+    "I want to make new friends.",
+    "How do I make friends?",
+    "I’m looking to meet new people.",
+    "I want to connect with others.",
+    "I need help finding friends.",
+    "How do I improve my social life?",
+    "I wish I had more friends."
+  ],
+  "responses": [
+    "It’s great that you want to make new friends! Have you thought about joining a club or activity that interests you?",
+    "Meeting new people can feel daunting, but starting small, like saying hi or showing interest in someone, can go a long way.",
+    "Friendship often starts with shared interests. Is there a hobby or group you could explore to meet like-minded people?",
+    "Connecting with others takes courage, but it’s worth it. Are there any community events or activities you could attend?",
+    "Building friendships takes time, but small steps can lead to big connections. What’s one thing you could do to meet someone new?"
+  ]
+},
+{
+  "tag": "lost_friendship",
+  "patterns": [
+    "I lost my best friend.",
+    "My friendship ended.",
+    "My friend doesn’t talk to me anymore.",
+    "I’m no longer close with my friends.",
+    "I had a falling out with my friend.",
+    "I miss my old friends.",
+    "My best friend and I don’t speak anymore."
+  ],
+  "responses": [
+    "Losing a friend can be really painful. Would you like to talk about what happened?",
+    "Friendships ending can leave a big gap in our lives. What’s been the hardest part for you?",
+    "It’s okay to grieve the loss of a friendship. Do you think this relationship could be repaired?",
+    "I’m sorry to hear about your friendship ending. Sometimes it helps to reflect on the good times you had together.",
+    "Losing a close friend is tough. Are there other people in your life who could offer support right now?"
+  ]
+},
+{
+  "tag": "ask",
+  "patterns": [
+    "Can I ask you something?",
+    "I have a question for you.",
+    "May I ask you a question?",
+    "Can I ask something?",
+    "Is it okay if I ask you something?",
+    "I need to ask you something.",
+    "Can I talk to you about something?"
+  ],
+  "responses": [
+    "Sure! I’ll do my best to answer your question.",
+    "Of course! Feel free to ask me anything.",
+    "Go ahead. I’m here to help with whatever you need.",
+    "Absolutely! Let me know what’s on your mind.",
+    "I’m listening. What would you like to ask?",
+    "Ask away! I’ll try my best to provide a helpful answer."
+  ]
+},
+{
+  "tag": "problem",
+  "patterns": [
+    "Probably because my exams are approaching. I feel stressed out because I don't think I've prepared well enough.",
+    "Probably because of my exams.",
+    "I feel this way because my exams are coming up.",
+    "My exams are making me feel anxious.",
+    "I don’t think I’m ready for my exams.",
+    "Exams are stressing me out.",
+    "I feel so nervous about my upcoming tests.",
+    "I’m overwhelmed by my exam preparations.",
+    "I feel like I’m not prepared for my exams."
+  ],
+  "responses": [
+    "I see. Have you tried any strategies to manage your stress or prepare more effectively?",
+    "Exams can be stressful. What’s one thing you can focus on today to feel more prepared?",
+    "It’s natural to feel this way before exams. How about breaking your study into smaller, manageable chunks?",
+    "Preparing for exams can feel overwhelming. Have you thought about creating a schedule to help organize your study time?",
+    "I understand. Have you taken any breaks to recharge your mind? Sometimes stepping away for a moment helps.",
+    "Feeling unprepared can be tough, but focusing on what you do know can make a big difference. What’s one subject you feel confident about?",
+    "Exams are challenging, but you’ve got this. How can I help you feel more ready?",
+    "It sounds like the pressure of exams is weighing on you. Let’s talk about what’s been the hardest part for you."
+  ]
+},
+{
+  "tag": "no-approach",
+  "patterns": [
+    "I guess not. All I can think about are my exams.",
+    "Not really.",
+    "I guess not.",
+    "No, I haven’t thought of anything.",
+    "No, I don’t have any approach yet.",
+    "I haven’t tried anything.",
+    "I don’t know what to do.",
+    "I’m just stuck thinking about my exams.",
+    "No, I can’t think of any solutions."
+  ],
+  "responses": [
+    "That’s no problem. I can see why you’d feel overwhelmed. Would you like me to suggest some tips to help you manage this stress?",
+    "It’s okay not to have a plan yet. Sometimes starting small can make a big difference. Would you like some suggestions?",
+    "No worries, it’s natural to feel stuck. I can share some tips to help you feel more in control. Interested?",
+    "I understand—it’s easy to get caught up in exam stress. Would you like to hear some ideas to ease your mind?",
+    "That’s alright. Taking the first step can be the hardest. Let me help you with some strategies to get started.",
+    "It’s perfectly fine to feel this way. Let me know if you’d like me to share tips to handle this stress more effectively."
+  ]
+},
+{
+  "tag": "learn-more",
+  "patterns": [
+    "Ok sure, I would like to learn more about it.",
+    "Yes, I would like to learn more about it.",
+    "I would like to learn more about it.",
+    "Tell me more about how I can manage this.",
+    "I want to hear more.",
+    "Please share more tips.",
+    "I’m interested in learning more.",
+    "Yes, tell me how I can deal with this."
+  ],
+  "responses": [
+    "First, I suggest giving yourself a break. Overthinking can lead to overwhelm. Taking a step back can clear your mind and help you approach the issue more effectively.",
+    "Break your work into smaller, manageable tasks. Focusing on one thing at a time can help reduce stress and make progress feel more achievable.",
+    "Have you tried scheduling short, focused study sessions with breaks in between? The Pomodoro technique, for example, is great for staying productive without burnout.",
+    "It’s important to take care of yourself physically. Ensure you’re eating well, staying hydrated, and getting some exercise, as these can all help improve focus and reduce stress.",
+    "A short relaxation exercise, such as deep breathing or mindfulness, can do wonders for clearing your head. Would you like me to guide you through one?",
+    "Talking to someone about your stress can also help—whether it’s a friend, family member, or teacher. They might offer support or advice you hadn’t considered.",
+    "Remember, no one is perfect, and it’s okay to ask for help or adjust your expectations. Progress is better than perfection.",
+    "Sleep is essential. Make sure you’re prioritizing rest to recharge your brain. Even a 20-minute power nap can make a difference!"
+  ]
+},
+{
+  "tag": "user-agree",
+  "patterns": [
+    "Yeah, you're right. I deserve a break.",
+    "Yeah, you're absolutely right about that.",
+    "I think you’re right.",
+    "You’re absolutely correct.",
+    "I agree with you.",
+    "That makes sense. I should take a break.",
+    "You’re right, I need to do that."
+  ],
+  "responses": [
+    "Next, I’d suggest trying meditation. It can help create a deep sense of relaxation and bring clarity to your mind.",
+    "That’s great to hear! Practicing mindfulness or meditation could be a wonderful next step to help you feel more at ease.",
+    "Now that you’ve decided to take a break, consider doing something calming, like meditation, stretching, or even journaling your thoughts.",
+    "I’m glad you agree. A few minutes of meditation each day can do wonders for your focus and stress levels.",
+    "Since you’re taking this positive step, how about trying a simple mindfulness exercise? Focusing on your breath for a few minutes can help reset your mind.",
+    "That’s a great mindset! Practicing meditation or deep breathing could help you feel more grounded and recharged."
+  ]
+},
+{
+  "tag": "meditation",
+  "patterns": [
+    "Hmmm, that sounds like it could be useful to me.",
+    "That sounds useful.",
+    "I think meditation could help.",
+    "Meditation seems like a good idea.",
+    "I’d like to give meditation a try.",
+    "That’s interesting. How do I start meditating?",
+    "Meditation sounds helpful.",
+    "Can you tell me more about how to meditate?"
+  ],
+  "responses": [
+    "Here’s a simple way to start meditating: Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. If your attention wanders, gently bring it back to your breath.",
+    "Meditation can be simple and effective. Try sitting comfortably, closing your eyes, and focusing on your breath. Count your inhales and exhales to stay present.",
+    "To meditate, find a quiet space, sit comfortably, and close your eyes. Focus on your breathing, and if your mind wanders, gently return to your breath without judgment.",
+    "Start with just a few minutes each day. Sit quietly, take deep breaths, and observe your thoughts without trying to control them. Gradually increase the time as you feel comfortable.",
+    "Mindfulness meditation is a great way to begin. Focus on your senses—what you hear, feel, or smell in the moment. It helps you stay grounded and calm.",
+    "You can try a guided meditation if you’re new to it. Apps or videos can walk you through the process step by step.",
+    "Meditation doesn’t have to be complicated. Even a minute of focusing on your breath and letting go of tension can help reduce stress.",
+    "Let’s try a quick exercise: Take a deep breath in for 4 seconds, hold it for 4 seconds, and exhale slowly for 6 seconds. Repeat this a few times to calm your mind."
+  ]
+},
+{
+  "tag": "user-meditation",
+  "patterns": [
+    "I did what you said and I feel a lot better. Thank you very much.",
+    "I feel better now.",
+    "I tried the meditation, and it helped a lot. Thank you.",
+    "I’m feeling much better now. Thanks for your advice.",
+    "I feel calmer now after following your suggestions.",
+    "Thank you for the meditation tips. I feel more relaxed."
+  ],
+  "responses": [
+    "You’re welcome! Always focus on what’s within your control. When you find yourself worrying, take a moment to examine the things you have control over. You can’t prevent a storm from coming, but you can prepare for it. You can’t control how others behave, but you can control how you react. By putting your energy into the things you can control, you’ll be much more effective and at peace.",
+    "I’m so glad to hear that! Remember: your effort and attitude are always within your control. Whenever things feel overwhelming, focus on what you can manage, and let go of what you can’t.",
+    "That’s great to hear! Keep practicing focusing on the things you can control—it’s a powerful way to stay grounded and effective.",
+    "I’m happy the meditation helped. Just remember, life will always have challenges, but centering yourself on what you can influence will help you face them with calm and clarity."
+  ]
+},
+{
+  "tag": "therabot-useful",
+  "patterns": [
+    "Thank you very much again. I'll continue practicing meditation and focus on what I can control.",
+    "This has been very helpful. Thank you.",
+    "I found your advice very useful. Thank you.",
+    "Thanks for your help. I’ll keep focusing on the things I can control.",
+    "Thank you for being so helpful.",
+    "I appreciate the tips you’ve given me."
+  ],
+  "responses": [
+    "I’m so glad you found this useful! Is there anything else I can assist you with?",
+    "You’re very welcome! I’m here to help whenever you need me. Let me know if there’s anything else on your mind.",
+    "It’s great to hear that! Remember, I’m always here to support you. Is there something else I can help you with?",
+    "I’m happy to have been helpful! Let me know if there’s anything else you’d like to talk about or work on."
+  ]
+},
+{
+  "tag": "user-advice",
+  "patterns": [
+    "I want some advice.",
+    "I need some advice.",
+    "I need advice on something.",
+    "Can I ask for advice?",
+    "I’m looking for some advice.",
+    "I could use some advice.",
+    "Do you have advice for me?",
+    "I need help figuring something out."
+  ],
+  "responses": [
+     "Sure! One piece of advice is to always focus on what you can control. Life often presents challenges, but by prioritizing your efforts on things within your power, you can navigate them more effectively.",
+    "Here’s some advice: Take small steps toward your goals each day. Progress, no matter how small, is still progress.",
+    "One of the best pieces of advice I can share is to be kind to yourself. Treat yourself with the same compassion you’d offer to a close friend.",
+    "Always remember: It’s okay to ask for help when you need it. Nobody has to face everything alone.",
+    "A good piece of advice is to take time for self-care. Whether it’s a walk, reading, or meditation, nurturing yourself is essential for your well-being.",
+    "Here’s something to keep in mind: Failure isn’t the opposite of success; it’s a step toward it. Learn from every experience.",
+    "Advice I often share is to focus on gratitude. Reflecting on the things you’re thankful for can shift your mindset and help you feel more positive."
+  ]
+},
+{
+  "tag": "learn-mental-health",
+  "patterns": [
+    "I want to learn about mental health.",
+    "I want to learn more about mental health.",
+    "I'm interested in learning about mental health.",
+    "Can you teach me about mental health?",
+    "I’d like to understand more about mental health.",
+    "What can you tell me about mental health?",
+    "I want to explore mental health topics.",
+    "Can you explain mental health to me?"
+  ],
+  "responses": [
+    "That’s wonderful! Mental health refers to our emotional, psychological, and social well-being. It affects how we think, feel, and act, as well as how we handle stress, relate to others, and make decisions.",
+    "I’m so glad you’re interested in learning about mental health! It’s a crucial aspect of overall well-being. Do you have specific topics you’d like to know more about, such as stress, anxiety, or self-care?",
+    "Mental health is all about maintaining balance in our thoughts, emotions, and relationships. If you’d like, I can share tips on improving mental health or coping strategies for challenges.",
+    "Learning about mental health is a great step! It’s important to recognize the signs of stress, understand emotional health, and practice mindfulness. Where would you like to start?",
+    "That’s fantastic to hear! Mental health includes emotional regulation, stress management, and self-awareness. Let me know if you have specific questions about it!",
+    "Mental health is just as important as physical health. It’s about being able to manage stress, maintain relationships, and make decisions effectively. Let’s dive deeper—what would you like to learn first?"
+  ]
+},
+{
+  "tag": "mental-health-fact",
+  "patterns": [
+    "Tell me a fact about mental health.",
+    "Tell me another fact about mental health.",
+    "Share a mental health fact.",
+    "Can you give me a fact about mental health?",
+    "I want to hear a mental health fact.",
+    "Do you have any mental health facts?"
+  ],
+  "responses": [
+    "Globally, one in four people will be affected by mental or neurological disorders at some point in their lives.",
+    "Approximately 280 million people worldwide suffer from depression, making it one of the most common mental health conditions.",
+    "Anxiety disorders affect an estimated 264 million people globally, with women being affected more often than men.",
+    "Mental health disorders are among the leading causes of disability worldwide, according to the World Health Organization.",
+    "Half of all mental health conditions start by the age of 14, but most cases go undetected and untreated.",
+    "Suicide is the second leading cause of death among 15-29-year-olds worldwide.",
+    "Good mental health is just as important as physical health and can significantly impact overall well-being and life satisfaction."
+  ]
+},
+{
+  "tag": "guilt",
+  "patterns": [
+    "I feel guilty all the time.",
+    "How do I stop blaming myself?",
+    "I can't forgive myself for my mistakes.",
+    "I always feel like everything is my fault.",
+    "Why can't I let go of the guilt?",
+    "I feel guilty for things I can't change.",
+    "I made a mistake, and I can't stop thinking about it.",
+    "How do I move on from guilt?",
+    "I feel like I let everyone down.",
+    "Why do I always feel so guilty?"
+  ],
+  "responses": [
+    "I’m sorry you’re feeling this way. Guilt can be so heavy, but it’s also a sign that you care deeply. Let’s think about how you can be kinder to yourself.",
+    "It’s okay to feel guilty—it shows you’re reflecting on your actions. But you don’t have to carry this burden alone. Have you tried talking to someone about it?",
+    "Forgiving yourself can be hard, but it’s an important step toward healing. Remember, you’re human, and everyone makes mistakes.",
+    "Guilt can feel overwhelming, but it doesn’t define who you are. You’re more than your mistakes, and you deserve peace.",
+    "Have you tried writing down your thoughts or talking them through with a trusted friend? Sometimes expressing guilt can help lighten its weight.",
+    "I know it’s hard, but you’re doing your best. Try to focus on the lessons you’ve learned rather than the mistakes you’ve made.",
+    "It’s important to remember that guilt can’t change the past, but it can guide your future choices. What’s one small step you can take toward letting go?",
+    "You might be holding yourself to impossible standards. Be gentle with yourself—you’re doing the best you can.",
+    "If the guilt feels too heavy, seeking help from a counselor can make a big difference. You don’t have to carry this alone.",
+    "You’re not alone in feeling this way. Everyone struggles with guilt at times, but healing is possible. You’re stronger than you think."
+  ]
+},
+{
+  "tag": "shame",
+  "patterns": [
+    "I feel ashamed of myself.",
+    "How do I stop feeling shame?",
+    "I can't move past my embarrassment.",
+    "I feel like I'm not good enough.",
+    "Why do I feel so much shame?",
+    "I keep reliving my mistakes.",
+    "How do I overcome shame?",
+    "I feel ashamed about my past.",
+    "Why do I always feel ashamed?",
+    "I can’t forgive myself for what happened."
+  ],
+  "responses": [
+    "I’m sorry you’re feeling this way. Shame can be so isolating, but it doesn’t have to define you. Let’s focus on how you can take a small step toward self-compassion.",
+    "It’s brave of you to acknowledge your feelings. Remember, everyone makes mistakes, and you are deserving of forgiveness and understanding.",
+    "Sometimes, shame makes us feel like we’re the only ones struggling, but you’re not alone. Sharing your feelings with someone you trust can help lighten the load.",
+    "You might be judging yourself more harshly than you deserve. Be kind to yourself—you’re doing your best.",
+    "It’s okay to feel ashamed, but it’s not a reflection of your worth. You’re so much more than this one experience.",
+    "Try reminding yourself of times when you’ve overcome challenges before. You’re stronger than the shame you feel right now.",
+    "If you’re stuck in shame, talking to a professional can be a safe way to explore those feelings and find relief.",
+    "Your past doesn’t define you. Each day is an opportunity to grow and move forward.",
+    "Shame can feel so heavy, but it’s important to remember that you are not your mistakes. You are worthy of love and acceptance.",
+    "You’re showing so much courage just by acknowledging your feelings. Healing from shame takes time, but you’re already on the right path."
+  ]
+},
+{
+  "tag": "jealousy",
+  "patterns": [
+    "I feel jealous of others.",
+    "How do I stop comparing myself?",
+    "I can't stop feeling envious.",
+    "Why do I always feel jealous?",
+    "How do I deal with jealousy?",
+    "I feel jealous of my friends' success.",
+    "How do I stop feeling jealous in my relationship?",
+    "Why am I so envious of others?",
+    "I feel jealous when others achieve more.",
+    "Why do I compare myself to everyone?"
+  ],
+  "responses": [
+    "I hear you—it’s tough to feel this way. Jealousy is natural, but it’s also a chance to reflect on what truly matters to you.",
+    "It’s okay to feel jealous sometimes. It doesn’t make you a bad person. What’s one thing you can focus on that brings you joy?",
+    "Jealousy can feel consuming, but it often points to something you care about. Have you thought about how you can channel this feeling into motivation?",
+    "It’s hard not to compare yourself to others, especially in today’s world. Remember, your journey is unique, and it’s okay to go at your own pace.",
+    "Try to remind yourself of the things you’re grateful for. Gratitude can help shift the focus away from comparisons.",
+    "Jealousy can sometimes highlight our unmet needs. Is there a way to focus on what you want and take a step toward it?",
+    "Your feelings are valid, and it’s okay to feel this way. Take a moment to focus on your strengths and what makes you unique.",
+    "In relationships, jealousy can feel overwhelming. Have you tried expressing your feelings honestly and calmly to your partner?",
+    "It’s not easy to let go of comparisons, but remember that everyone’s success looks different. You’re doing better than you think.",
+    "You’re not alone in feeling this way. Jealousy is a common emotion, but it doesn’t define you. You’ve got so much to offer."
+  ]
+},
+{
+  "tag": "boredom",
+  "patterns": [
+    "I feel so bored.",
+    "How do I make my life more exciting?",
+    "Why do I feel empty all the time?",
+    "I can’t find anything interesting to do.",
+    "What can I do to stop feeling bored?",
+    "Life feels so dull right now.",
+    "How do I add excitement to my routine?",
+    "I feel like I’m stuck in a rut.",
+    "Why does everything feel repetitive?",
+    "I have no motivation because I’m bored."
+  ],
+  "responses": [
+    "I’m sorry you’re feeling this way. Boredom can make everything feel harder, but it can also be an opportunity to try something new or rediscover old interests.",
+    "Sometimes boredom comes from routine. What’s one small change you can make today to mix things up, even if it’s just taking a walk or calling a friend?",
+    "It’s okay to feel stuck. When was the last time you did something just for fun? Maybe revisiting an old hobby could help.",
+    "Boredom often signals that we need a break or a new challenge. Could you explore something creative, like drawing, writing, or cooking?",
+    "Have you thought about setting a small goal for yourself? Accomplishing even a tiny task can bring back a sense of purpose.",
+    "Sometimes boredom comes from feeling disconnected. Could you reach out to someone you trust or join a new community group to feel more engaged?",
+    "Trying something completely unfamiliar, like learning a new skill online, can help you break free from the monotony.",
+    "It’s natural to feel this way sometimes. Have you tried a mindfulness exercise? Being present can make everyday moments feel richer.",
+    "Exploring nature, even in a small way, can help lift your mood and bring inspiration. Could you plan a short outing nearby?",
+    "Boredom is temporary, even if it feels endless right now. Be kind to yourself—it’s okay to take small steps toward change."
+  ]
+},
+{
+  "tag": "grief",
+  "patterns": [
+    "I’m grieving a loss.",
+    "How do I handle losing someone close?",
+    "I can’t stop mourning.",
+    "Why does grief hurt so much?",
+    "How do I cope with losing a loved one?",
+    "I feel so empty after this loss.",
+    "Will I ever feel normal again after this loss?",
+    "Why do I feel guilty while grieving?",
+    "How do I deal with the pain of grief?",
+    "I feel like no one understands my loss."
+  ],
+  "responses": [
+    "I’m so sorry for your loss. Grief is a deeply personal journey, and it’s okay to feel however you’re feeling right now.",
+    "Losing someone can leave a huge void, but remember, it’s okay to take your time to heal. You don’t have to rush your emotions.",
+    "Grief comes in waves—it’s natural to feel okay one moment and overwhelmed the next. Be patient with yourself during this process.",
+    "Sometimes talking to someone who understands, like a close friend or a grief counselor, can help ease the burden you’re carrying.",
+    "It’s okay to cry, to feel angry, or even to laugh when you least expect it. All these feelings are part of the grieving process.",
+    "You might feel like no one understands, but your grief is valid. Sharing your feelings, even if just a little, can help you feel less alone.",
+    "Grief often comes with guilt, but it’s important to remind yourself that your loved one wouldn’t want you to carry that burden forever.",
+    "Connecting with memories, like looking through photos or writing about them, can be a comforting way to keep their presence alive in your heart.",
+    "Healing doesn’t mean forgetting. It means learning to live with the loss while still cherishing the moments you had together.",
+    "You’re stronger than you feel right now. Grief can feel unbearable, but you’re not alone. Support is always available when you’re ready to reach out."
+  ]
+},
+{
+  "tag": "hope",
+  "patterns": [
+    "I feel hopeful about the future.",
+    "How do I stay hopeful?",
+    "I want to hold onto hope.",
+    "How do I find hope when everything feels hard?",
+    "What does hope mean to you?",
+    "I’m scared to feel hopeful.",
+    "How can I help others feel hopeful?",
+    "What are some ways to stay positive?",
+    "I want to feel more hopeful about my life.",
+    "How can I hold onto hope when things go wrong?"
+  ],
+  "responses": [
+    "Hope is a powerful thing—it shows that even in hard times, you believe in the possibility of better days. Hold onto that belief.",
+    "It’s normal to feel uncertain when things seem difficult, but hope is about trusting that challenges won’t last forever.",
+    "Sometimes hope comes from small things, like a kind word or a quiet moment. Look for those moments—they can add up.",
+    "Even when life feels overwhelming, remind yourself of one small thing you’re grateful for. Gratitude and hope often go hand in hand.",
+    "You don’t have to feel hopeful every moment, but keeping a small spark alive is enough. Let that spark grow over time.",
+    "Sharing your hope with others can be contagious. A kind word or gesture can remind someone else of the goodness in the world.",
+    "It’s okay to feel afraid of hope—it means you’re invested in your life. Take it one day at a time, and let that fear turn into motivation.",
+    "When things go wrong, remind yourself of other times you’ve faced challenges and found a way through. You’re capable of so much.",
+    "Hope isn’t about ignoring hard times; it’s about believing that you can find meaning and growth through them.",
+    "Even the smallest steps toward your goals can build hope. Celebrate those small wins—they’re proof of your progress."
+  ]
+},
+{
+  "tag": "love",
+  "patterns": [
+    "I feel so loved right now.",
+    "I’m in love.",
+    "How do I express my love for someone?",
+    "What does love mean to you?",
+    "How do I maintain love in a relationship?",
+    "Why is love so complicated?",
+    "I want to tell someone I love them.",
+    "How do I know if it’s real love?",
+    "How do I deal with losing someone I love?",
+    "Why does love feel so overwhelming?"
+  ],
+  "responses": [
+    "Love is such a beautiful and powerful emotion. It’s amazing that you’re feeling it so strongly right now.",
+    "Expressing love can be as simple as telling someone how much they mean to you or showing kindness in small ways.",
+    "Love can be overwhelming at times because it’s deeply connected to our emotions and vulnerabilities. It’s okay to feel this way.",
+    "If you’re wondering if it’s real love, trust your feelings and how this connection makes you grow and feel supported.",
+    "Maintaining love in a relationship takes effort, communication, and trust. Checking in with each other regularly can strengthen your bond.",
+    "Telling someone you love them can feel scary, but it’s also incredibly rewarding. Speak from your heart, and trust they’ll feel your sincerity.",
+    "Love can be complicated because it involves so many emotions, but it’s also what makes us feel most alive. Embrace the journey.",
+    "Losing someone you love is deeply painful. Give yourself time to grieve while cherishing the memories that keep their love alive.",
+    "Love is about connection. If it feels overwhelming, take a step back and focus on how to nurture yourself while nurturing others.",
+    "Remember, love starts with yourself. The more you value and care for yourself, the stronger your ability to love others becomes."
+  ]
+},
+{
+  "tag": "regret",
+  "patterns": [
+    "I regret my decisions.",
+    "How do I let go of regret?",
+    "Why can’t I stop thinking about my mistakes?",
+    "I wish I could go back and change things.",
+    "I regret hurting someone I care about.",
+    "How do I move forward after making a mistake?",
+    "I can’t forgive myself for what I’ve done.",
+    "Why do I feel so much regret all the time?",
+    "I wish I could undo my past actions.",
+    "How can I stop being consumed by regret?"
+  ],
+  "responses": [
+    "Regret can feel overwhelming, but it’s a sign you care about doing better. Forgiving yourself is the first step to moving forward.",
+    "You can’t change the past, but you can learn from it. What’s one small action you can take today to make things better?",
+    "Be kind to yourself—mistakes are part of being human. Focus on what you’ve learned and how you’ve grown from the experience.",
+    "If you’ve hurt someone, reaching out to apologize can help bring closure. It’s never too late to try to make amends.",
+    "It’s okay to feel regret, but don’t let it define you. You are more than your mistakes, and you deserve to move forward.",
+    "Regret often comes from holding yourself to impossible standards. Be gentle with yourself—you’re doing the best you can.",
+    "Have you thought about writing a letter to yourself or the person you’ve hurt? Even if you don’t send it, it can help release your feelings.",
+    "Focus on what’s within your control now. The past can’t be changed, but the future is always yours to shape.",
+    "Talking to a trusted friend or counselor can help you process your regret and find a path toward healing.",
+    "Remember, every mistake is a chance to grow. You’re not alone in feeling this way, and you are stronger than you realize."
+  ]
+},
+{
+  "tag": "confusion",
+  "patterns": [
+    "I feel so confused.",
+    "Why can’t I make sense of my thoughts?",
+    "How do I find clarity when I’m overwhelmed?",
+    "I don’t know what to do.",
+    "Why do I feel so lost?",
+    "How can I organize my thoughts?",
+    "I’m confused about my next steps.",
+    "Why can’t I make decisions?",
+    "How do I deal with feeling so unsure?",
+    "Everything feels so unclear right now."
+  ],
+  "responses": [
+    "I’m sorry you’re feeling this way. Confusion can be tough, but it often means you’re working through something important. Take a deep breath and start small.",
+    "When everything feels overwhelming, breaking things into smaller pieces can help. Focus on one step at a time.",
+    "It’s okay to feel lost right now. Sometimes confusion is a sign that you’re growing and exploring new possibilities.",
+    "Writing down your thoughts or talking them out with someone you trust can help bring clarity to the situation.",
+    "Remember, you don’t have to figure everything out all at once. Give yourself permission to take things one step at a time.",
+    "Confusion is normal when you’re dealing with big decisions or changes. Trust that clarity will come with time and patience.",
+    "Try grounding yourself in the present moment. Focus on what you can control right now, no matter how small it seems.",
+    "Sometimes taking a break and stepping away from the problem can give you a fresh perspective when you return to it.",
+    "You’re not alone in feeling this way. Seeking advice from someone with experience or a professional can be really helpful.",
+    "Be gentle with yourself. Confusion isn’t failure—it’s part of figuring things out. You’ll find your way through this."
+  ]
+},
+{
+  "tag": "excitement",
+  "patterns": [
+    "I feel excited about the future.",
+    "I can’t wait for what’s coming!",
+    "How do I share my excitement?",
+    "Why am I feeling so energized?",
+    "How do I channel my excitement?",
+    "What should I do when I’m feeling this excited?",
+    "I’m thrilled about this opportunity.",
+    "Why does excitement feel so overwhelming?",
+    "I want to hold onto this feeling.",
+    "How do I keep my excitement going?"
+  ],
+  "responses": [
+    "It’s wonderful that you’re feeling this way! Excitement can be so energizing—what’s something you’d like to do with that energy?",
+    "Sharing your excitement with someone who cares about you can make the experience even better. Who could you tell today?",
+    "When you’re excited, it’s a great time to take action on the things you’ve been dreaming about. What’s one step you can take right now?",
+    "Sometimes excitement can feel overwhelming. Take a moment to breathe and savor the joy—it’s okay to enjoy the moment fully.",
+    "Your excitement is contagious! Use this energy to inspire others or to work on a project you’re passionate about.",
+    "It’s great that you’re feeling so thrilled. Keeping a journal about what’s exciting you can help you hold onto this feeling.",
+    "Excitement can motivate you to achieve your goals. What’s one thing you can focus on to keep this momentum going?",
+    "Enjoy this feeling—it’s a reminder that life has so much to offer. Let yourself be fully present in the moment.",
+    "If your excitement feels overwhelming, channel it into something creative or active, like writing, painting, or exercising.",
+    "You’re in such a positive place right now! Sharing your excitement or celebrating small wins can keep this energy alive."
+  ]
+},
+{
+  "tag": "disappointment",
+  "patterns": [
+    "I feel so disappointed.",
+    "Why do things never go as planned?",
+    "How do I handle disappointment?",
+    "I feel like I’ve let myself down.",
+    "Why does disappointment hurt so much?",
+    "How can I bounce back after being disappointed?",
+    "I feel like I’ve failed.",
+    "Why do I feel so let down?",
+    "How do I recover when things don’t work out?",
+    "What can I do to move past disappointment?"
+  ],
+  "responses": [
+    "I’m sorry you’re feeling this way. Disappointment can be tough, but it’s a sign that you care deeply about the outcome.",
+    "It’s okay to feel let down. Take a moment to process your feelings before thinking about your next steps.",
+    "Disappointment can feel like failure, but it’s not—it’s just a step along the way. What can you learn from this experience?",
+    "When things don’t go as planned, it’s important to be kind to yourself. You’re doing the best you can.",
+    "Disappointment hurts because we put our heart into things. Give yourself credit for trying and remember that success often comes after setbacks.",
+    "Talking to someone about your disappointment can help you process it and see things from a new perspective.",
+    "It’s okay to feel upset, but don’t let it define your worth. You’re capable of so much more than this one moment.",
+    "Think about a time when you overcame a disappointment before. You’re resilient, and you’ll find a way through this too.",
+    "Sometimes disappointment is an opportunity to adjust your goals or approach. What’s one small change you can make moving forward?",
+    "You’re not alone in feeling this way. Everyone faces setbacks, but what matters is how you rise again."
+  ]
+},
+{
+  "tag": "embarrassment",
+  "patterns": [
+    "I feel so embarrassed.",
+    "How do I get over this embarrassing moment?",
+    "Why can’t I stop thinking about what happened?",
+    "I feel like everyone is judging me.",
+    "How do I handle embarrassing situations?",
+    "Why does embarrassment feel so intense?",
+    "I made a fool of myself.",
+    "How do I move on from this?",
+    "I can’t stop cringing at what I did.",
+    "Why do I feel so ashamed after embarrassing myself?"
+  ],
+  "responses": [
+    "I’m sorry you’re feeling this way. Embarrassment can feel overwhelming, but it’s a reminder that you care about how others see you—and that’s human.",
+    "Everyone has moments they cringe about. It’s part of being human. Give yourself permission to let it go and move forward.",
+    "Most people are more focused on themselves than we think. Chances are, others have already forgotten the moment you’re stuck on.",
+    "When you feel embarrassed, take a deep breath and remind yourself that this moment doesn’t define you—it’s just a small blip in the bigger picture.",
+    "It’s okay to laugh at yourself—it can help ease the weight of embarrassment and remind you not to take life too seriously.",
+    "Try writing about the moment and how you’re feeling. Getting it out of your head can help you let go of the tension.",
+    "Remember, everyone makes mistakes or has awkward moments. It’s these imperfections that make us relatable and human.",
+    "If you’re struggling to move on, talking to a trusted friend can help. They may even share their own embarrassing stories to make you feel better.",
+    "Focus on the lessons this moment might teach you. Embarrassment often helps us grow and develop resilience.",
+    "You’re not alone"
+    ]
+},
+
+{
+  "tag": "fact-1",
+  "patterns": [
+    "What is mental health?",
+    "Define Mental Health.",
+    "Can you explain what mental health means?",
+    "What does mental health mean?",
+    "How would you define mental health?",
+    "Tell me the definition of mental health."
+  ],
+  "responses": [
+    "Mental health is a state of well-being in which an individual realizes their own abilities, can cope with the normal stresses of life, can work productively, and is able to contribute to their community.",
+    "Mental health encompasses emotional, psychological, and social well-being. It influences how we think, feel, and behave in our daily lives.",
+    "Mental health helps determine how we handle stress, relate to others, and make decisions. It’s essential at every stage of life, from childhood through adulthood.",
+    "In simple terms, mental health is about maintaining a balance in how we think, feel, and act, and how we handle challenges and relationships."
+  ]
+},
+{
+  "tag": "fact-2",
+  "patterns": [
+    "Why is mental health important?",
+    "What is the importance of mental health?",
+    "Can you explain why mental health matters?",
+    "How does mental health affect our lives?",
+    "Why should we focus on mental health?",
+    "Tell me the significance of mental health."
+  ],
+  "responses": [
+    "Mental health is incredibly important because it affects every aspect of our lives. It impacts how we think, feel, and behave, and it also influences how we handle stress, make decisions, and connect with others. Good mental health enables individuals to cope with the challenges of life, work productively, and build meaningful relationships. When mental health is neglected, it can lead to a variety of issues, including difficulty managing daily tasks, strained relationships, and even physical health problems.",
+    "Focusing on mental health is essential because it stabilizes our emotions, thoughts, and behaviors. When we prioritize mental health, we become better equipped to manage stress, overcome adversity, and maintain a positive outlook on life. Mental health care can also enhance productivity, improve self-esteem, and foster resilience, enabling individuals to lead fulfilling and balanced lives.",
+    "Mental health matters because it directly impacts our overall well-being and quality of life. A healthy mind allows us to pursue our goals, build strong social connections, and navigate the complexities of life with confidence. Poor mental health, on the other hand, can lead to challenges such as anxiety, depression, and reduced ability to perform daily activities. By focusing on mental health, we can create a foundation for personal growth, emotional stability, and long-term happiness.",
+    "The importance of mental health cannot be overstated. It plays a vital role in shaping our emotional and psychological resilience, helping us face life's difficulties with strength and clarity. Good mental health also fosters a sense of purpose, encourages positive relationships, and supports physical health by reducing stress-related illnesses. Neglecting mental health can have widespread consequences, so prioritizing it is key to living a meaningful and productive life."
+  ]
+},
+{
+  "tag": "fact-3",
+  "patterns": [
+    "What is Depression?",
+    "Define Depression.",
+    "Can you explain what depression is?",
+    "Tell me about depression."
+  ],
+  "responses": [
+    "Depression is a common mental health disorder characterized by a persistent feeling of sadness or a lack of interest in activities. It can affect how a person thinks, feels, and handles daily tasks like sleeping, eating, or working.",
+    "Clinically, depression is marked by symptoms such as a depressed mood, feelings of worthlessness, fatigue, difficulty concentrating, and loss of interest in activities that were once enjoyable. These symptoms must last for at least two weeks to be considered depression.",
+    "Depression is not just feeling sad temporarily. It is a serious condition that impacts mental, emotional, and physical health. It can stem from a variety of factors, including biological, psychological, and social influences."
+  ]
+},
+{
+  "tag": "fact-5",
+  "patterns": [
+    "How do I know if I have Depression?",
+    "Am I depressed?",
+    "Am I suffering from depression?",
+    "Am I mentally ill?",
+    "What are the signs of depression?"
+  ],
+  "responses": [
+    "Depression is diagnosed when someone experiences a low mood or loss of interest or pleasure in life for at least two weeks. Other symptoms include persistent sadness, feelings of hopelessness, irritability, fatigue, and difficulty concentrating.",
+    "Signs of depression can include changes in appetite, sleep disturbances, low energy levels, and feelings of worthlessness or excessive guilt. If these symptoms persist and interfere with daily life, it’s important to consult a professional.",
+    "If you are consistently feeling sad, unmotivated, or unable to enjoy life, it may be a sign of depression. Talking to a mental health professional can provide clarity and guidance."
+  ]
+},
+{
+  "tag": "fact-6",
+  "patterns": [
+    "What is a therapist?",
+    "What does a therapist do?",
+    "Can you explain the role of a therapist?",
+    "Who is a therapist?"
+  ],
+  "responses": [
+    "A therapist is a professional trained to help individuals manage and overcome mental, emotional, and behavioral challenges. They use various methods, such as counseling or psychotherapy, to support their clients.",
+    "Therapists include professionals like psychologists, social workers, counselors, and even life coaches. They work to improve mental health, relationships, and overall well-being.",
+    "The role of a therapist is to provide a safe and nonjudgmental space for people to explore their thoughts and feelings. They help develop coping strategies and provide guidance for personal growth."
+  ]
+},
+{
+  "tag": "fact-7",
+  "patterns": [
+    "What is therapy?",
+    "Do I need therapy?",
+    "Who is therapy for?",
+    "Can you explain therapy to me?"
+  ],
+  "responses": [
+    "Therapy is a structured process where a trained professional helps individuals address and manage mental, emotional, or behavioral challenges. It is often used to treat conditions like depression, anxiety, and trauma.",
+    "Therapy can be beneficial for anyone, not just those with mental health conditions. It is a tool for self-improvement, problem-solving, and emotional support during difficult times.",
+    "Therapy provides a safe space to explore your feelings, identify underlying issues, and develop strategies for personal growth. It can be short-term or long-term, depending on your needs.",
+    "If you’re struggling with stress, relationships, or any emotional challenges, therapy can offer guidance and tools to help you navigate these issues effectively."
+  ]
+},
+    {"tag": "fact-8",
+    "patterns": ["What does it mean to have a mental illness?",
+    "Can you explain what mental illness is?",
+    "What is the meaning of mental illness?",
+    "What does mental illness involve?",
+    "How do you define mental illness?",
+    "What are mental illnesses?",
+    "Tell me what having a mental illness means."
+],
+        "responses": ["Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning. They are associated with distress and diminished capacity to engage in the ordinary activities of daily life. Mental illnesses fall along a continuum of severity: some are fairly mild and only interfere with some aspects of life, such as certain phobias. On the other end of the spectrum lie serious mental illnesses, which result in major functional impairment and interference with daily life. These include such disorders as major depression, schizophrenia, and bipolar disorder, and may require that the person receives care in a hospital. It is important to know that mental illnesses are medical conditions that have nothing to do with a person's character, intelligence, or willpower. Just as diabetes is a disorder of the pancreas, mental illness is a medical condition due to the brain's biology. Similarly to how one would treat diabetes with medication and insulin, mental illness is treatable with a combination of medication and social support. These treatments are highly effective, with 70-90 percent of individuals receiving treatment experiencing a reduction in symptoms and an improved quality of life. With the proper treatment, it is very possible for a person with mental illness to be independent and successful."]
+    },
+    {"tag": "fact-9",
+        "patterns": ["Who does mental illness affect?",
+    "Who is impacted by mental illness?",
+    "Who can be affected by mental health disorders?",
+    "Does mental illness affect everyone?",
+    "Who is at risk of mental illness?",
+    "Can mental illness affect anyone?",
+    "Who are the people affected by mental illness?"],
+        "responses": [
+    "Mental illness can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. It is estimated that 1 in 5 adults in America experiences mental illness each year, and 1 in 24 has a serious mental illness.",
+    "Mental illnesses do not discriminate—they can impact people from all walks of life. However, certain conditions may be more common in specific populations. For instance, eating disorders are more prevalent in females, while attention deficit/hyperactivity disorder (ADHD) is more commonly diagnosed in children.",
+    "Mental illnesses often begin early in life, with 75% of mental health conditions developing by the age of 24. Young people and older adults can be especially vulnerable to certain mental health issues, making early identification and treatment crucial.",
+    "Parents and caregivers should pay attention to changes in a child’s mood, personality, habits, and social interactions. In children under 18, these symptoms may be classified as serious emotional disturbances (SEDs). Awareness and intervention at an early stage can significantly improve outcomes."
+  ]
+    },
+{
+  "tag": "fact-10",
+  "patterns": [
+    "What causes mental illness?",
+    "What are the causes of mental illness?",
+    "Can you explain what leads to mental illness?",
+    "Why do people develop mental illnesses?",
+    "What factors contribute to mental illness?"
+  ],
+  "responses": [
+    "Mental illness can have many causes, and they are often a combination of genetic, biological, environmental, and psychological factors. Genetics can play a role, as mental illnesses may run in families, but having a family history doesn’t guarantee someone will develop a mental health condition.",
+    "Biological factors, such as chemical imbalances in the brain, can significantly contribute to mental illness. For instance, imbalances in neurotransmitters like serotonin or dopamine are linked to conditions like depression and anxiety.",
+    "Environmental stressors can also play a role. Experiences such as trauma, abuse, neglect, or significant life changes can trigger or worsen mental health conditions. Chronic stress or exposure to adverse conditions over time can be particularly harmful.",
+    "Psychological factors, including personality traits, coping skills, and unresolved emotional issues, can increase susceptibility to mental illness. It's important to recognize that no single cause applies to everyone; mental health conditions are highly individual and multifaceted."
+  ]
+},    {"tag": "fact-11",
+        "patterns": ["What are some of the warning signs of mental illness?"],
+        "responses": ["Symptoms of mental health disorders can vary based on the type and severity of the condition. Below are some general warning signs for mental health issues: In adults: Confused thinking or difficulty concentrating, persistent sadness or irritability, extreme highs and lows in mood, excessive fear, worry, or anxiety, social withdrawal or isolation, noticeable changes in eating or sleeping habits, strong feelings of anger or irritability, delusions or hallucinations (seeing or hearing things that aren’t real), struggling to cope with daily responsibilities, thoughts of suicide or self-harm, avoidance or denial of obvious problems, frequent unexplained physical symptoms, and substance abuse, including drugs or alcohol."]
+    },
+{
+  "tag": "fact-12",
+  "patterns": [
+    "Can people with mental illness recover?",
+    "Is recovery from mental illness possible?",
+    "Can someone with mental illness get better?",
+    "Do people fully recover from mental health conditions?",
+    "Can mental illnesses be treated successfully?"
+  ],
+  "responses": [
+    "Yes, people with mental illnesses can recover, especially with early identification and appropriate treatment. The recovery process involves addressing the symptoms, improving overall well-being, and achieving personal goals. While some people may experience a return of symptoms, careful management and support can lead to a fulfilling and productive life.",
+    "Recovery from mental illness is possible with the right combination of treatments and support. This may include therapy, medication, self-care strategies, and a strong support system. It’s important for the individual to actively engage in their recovery journey and seek help when needed.",
+    "The nature of recovery can vary from person to person, but many individuals with mental health conditions respond well to treatment. Even if symptoms occasionally return, consistent monitoring and a proactive approach to managing the illness can significantly improve quality of life.",
+    "Mental health recovery isn’t about eliminating the condition entirely but rather learning how to manage symptoms effectively. With the right treatment and support, people with mental illnesses can build meaningful relationships, pursue their goals, and live fulfilling lives."
+  ]
+},
+{
+  "tag": "fact-13",
+  "patterns": [
+    "What should I do if I know someone who appears to have the symptoms of a mental disorder?",
+    "How can I help someone who might have a mental illness?",
+    "What can I do if someone I know is showing signs of mental health issues?",
+    "How do I support a friend with mental health problems?",
+    "What should I do if a loved one has symptoms of a mental disorder?"
+  ],
+  "responses": [
+    "While professional advice is essential, you can start by letting the person know that you care about them and are there to support them. Encourage them to talk openly about their feelings and reassure them that seeking help from a mental health professional is a positive step toward recovery.",
+    "If you know someone showing signs of a mental health condition, don’t assume the issue will resolve itself. Let them know you are there for them and encourage them to seek professional help. Early intervention can make a significant difference in their recovery.",
+    "Speak with a mental health professional or counselor if you believe your friend or family member is experiencing symptoms of a mental disorder. Gently encourage them to do the same and remind them that treatment options are available to help them heal.",
+    "Let the person know that you are willing to listen without judgment. Sometimes, simply being present and showing empathy can help them feel supported and less alone. When they know you care, they may be more willing to seek help."
+  ]
+},
+{
+  "tag": "fact-14",
+  "patterns": [
+    "How can I find a mental health professional for myself or my child?",
+    "Where can I look for a mental health professional?",
+    "How do I find a therapist for my child?",
+    "What’s the best way to find a mental health professional?",
+    "How can I locate a mental health provider?",
+    "Where should I start to find a therapist for myself or my child?"
+  ],
+  "responses": [
+    "Finding the right mental health professional is an important step. Start by searching for licensed providers in your area, either online or through directories like those offered by mental health organizations. Consider asking for referrals from your primary care physician, school counselors, or trusted friends and family members.",
+    "Comfort with the professional is critical for effective treatment. Look for someone who specializes in the concerns you or your child are facing, such as anxiety, depression, or developmental issues. Many providers offer introductory consultations to help determine if they’re the right fit.",
+    "You can begin by checking with your insurance provider to find covered mental health professionals in your network. Additionally, local community centers or organizations often provide resources or referrals for affordable mental health care.",
+    "When seeking a mental health professional, it’s important to find someone who understands your or your child’s needs. Online platforms, such as directories from mental health associations or telehealth services, can make this process easier. Don’t hesitate to interview potential therapists to ensure they’re the right fit."
+  ]
+},    
+{
+  "tag": "fact-15",
+  "patterns": [
+    "What treatment options are available?",
+    "What are the treatments for mental illness?",
+    "How can mental illnesses be treated?",
+    "What kinds of treatments exist for mental health issues?",
+    "What options are there for treating mental health conditions?",
+    "What are the available therapies for mental health disorders?"
+  ],
+  "responses": [
+    "There are many effective treatment options available for mental health conditions, and the right approach depends on the individual’s needs. Common treatments include psychotherapy, medication, lifestyle changes, and support groups. Often, a combination of these approaches works best.",
+    "Psychotherapy, or talk therapy, is one of the most common treatments. It involves working with a trained therapist to explore thoughts, feelings, and behaviors. Cognitive-behavioral therapy (CBT), for example, is highly effective for conditions like anxiety and depression.",
+    "Medication can be an important part of treatment for some mental health conditions. Antidepressants, anti-anxiety medications, and mood stabilizers are commonly prescribed to help regulate symptoms. It’s important to consult with a doctor or psychiatrist to determine what’s best.",
+    "Other treatment options include lifestyle changes such as regular exercise, a healthy diet, and mindfulness practices. These can complement traditional therapies and help improve overall well-being. Support groups can also provide a valuable sense of community and shared understanding."
+  ]
+},    
+{
+  "tag": "fact-16",
+  "patterns": [
+    "If I become involved in treatment, what do I need to know?",
+    "What should I know if I start treatment?",
+    "What do I need to ask if I or a loved one is starting treatment?",
+    "How can I prepare for mental health treatment?",
+    "What questions should I ask about mental health treatment?"
+  ],
+  "responses": [
+    "Starting treatment is a significant step, and it’s okay to feel overwhelmed. To ensure a smooth process, consider asking questions such as: What is the diagnosis? What are the potential causes of this condition? What treatment options are available, and which is most suitable? This helps you stay informed and involved.",
+    "Being proactive in treatment is essential. Ask about the recommended approach, possible side effects of treatments or medications, and how progress will be evaluated. It’s also helpful to understand the roles of specialists involved and what support your family can offer.",
+    "To prepare for treatment, gather information about the condition, available therapies, and potential outcomes. Discussing how the treatment team will monitor progress and manage setbacks can provide clarity and confidence in the process.",
+    "Active participation is key to successful treatment. Questions like 'How can I support the process?' or 'Are there any additional tests or examinations needed?' can guide you in being fully engaged. Also, understanding family involvement and access to the treatment team can improve coordination and outcomes."
+  ]
+},
+{
+  "tag": "fact-17",
+  "patterns": [
+    "What is the difference between mental health professionals?",
+    "How do mental health professionals differ?",
+    "What are the types of mental health providers?",
+    "What’s the difference between therapists, psychologists, and psychiatrists?",
+    "How do I know which mental health professional to choose?",
+    "Can you explain the roles of different mental health professionals?"
+  ],
+  "responses": [
+     "Mental health professionals differ based on their education, training, and areas of expertise. For example, psychiatrists are medical doctors who can prescribe medication, while psychologists focus on therapy and testing. Licensed counselors or therapists provide talk therapy but do not prescribe medication.",
+    "There are various types of mental health professionals, each serving different roles. Psychiatrists primarily handle medication management. Psychologists focus on therapy and psychological assessments. Therapists and counselors help with emotional and behavioral challenges through talk therapy, while social workers assist with life management and resources.",
+    "The variety of mental health providers can be confusing, but understanding their roles can help. Psychiatrists prescribe medication, psychologists specialize in therapy and assessments, and counselors or therapists address everyday emotional challenges. Finding the right professional depends on your needs and preferences.",
+    "When choosing a mental health professional, it’s important to consider your specific needs. Psychiatrists can prescribe medication, psychologists provide therapy and testing, and licensed counselors or therapists focus on helping with emotional or behavioral concerns. Researching their expertise can help you make an informed decision."
+  ]
+},
+{
+  "tag": "fact-18",
+  "patterns": [
+    "How can I find a mental health professional right for my child or myself?",
+    "How do I choose the right mental health professional?",
+    "What should I consider when selecting a mental health provider?",
+    "How do I know if a therapist is right for me or my child?",
+    "What steps should I take to find the best mental health professional?"
+  ],
+  "responses": [
+    "Finding the right mental health professional is essential for successful treatment. Start by considering the specific needs of yourself or your child, such as the type of issues you’re addressing (e.g., anxiety, depression, behavioral concerns). Research professionals who specialize in those areas and read reviews or ask for recommendations.",
+    "Comfort and trust are critical in building a productive relationship with a mental health professional. Many providers offer an initial consultation to see if they’re a good fit for you or your child. Use this opportunity to ask about their experience, treatment approaches, and how they tailor their methods to individual needs.",
+    "When looking for the right professional, explore local directories or online platforms that list licensed mental health providers. Consider their credentials, areas of expertise, and whether they accept your insurance or offer affordable options.",
+    "Choosing the right professional involves ensuring they align with your goals for therapy. Whether it’s a therapist for talk therapy or a psychiatrist for medication management, understanding their qualifications and approach to treatment can help you make an informed decision."
+  ]
+},
+{
+  "tag": "fact-19",
+  "patterns": [
+    "Where else can I get help?",
+    "What are other ways to get mental health support?",
+    "Where can I find additional help for mental health?",
+    "What are other resources for mental health assistance?",
+    "How do I find support beyond therapy?"
+  ],
+  "responses": [
+    "Where you seek help depends on the nature of your concerns and what suits you best. A good starting point is talking to someone you trust, such as a family member, friend, clergy, or healthcare provider. These people can offer support, listen to your concerns, and help you find mental health resources in your area.",
+    "You can look for mental health resources locally, such as community mental health centers, crisis hotlines, or online directories of licensed professionals. Many organizations provide low-cost or free services for those in need.",
+    "Peer support can be a valuable resource. Many people find comfort in connecting with others who have experienced similar challenges. Support groups, whether peer-led or facilitated by a professional, can provide a safe space to share and learn from others’ experiences.",
+    "There are also national and local organizations dedicated to mental health that offer a range of resources, from online chats and helplines to educational material and professional referrals. Exploring these options can provide additional tools and support for your journey to recovery."
+  ]
+},
+    {"tag": "fact-20",
+        "patterns": ["What should I know before starting a new medication?"],
+        "responses": ["Before starting a new medication, it’s important to gather as much information as possible from the prescribing physician. Some key questions to ask include: What is the medication supposed to do, and how will I know it’s working? When should it begin to take effect, and how long should I take it? Are there any specific foods, drinks, other medications, or activities I should avoid while taking this medication? What are the potential side effects, and what should I do if they occur? What happens if I miss a dose, and how should I handle it? Is there written information or resources available about this medication? Are there alternative medications available, and if so, why is this one preferred? How will the medication be monitored, and what signs might indicate adjustments are needed?",
+    "Medications for mental health conditions often take time to show benefits, sometimes requiring several weeks of consistent use. It’s crucial to follow the prescribed dosage and schedule, as irregular use or extra doses can lead to ineffective treatment or dangerous side effects.",
+    "Your doctor or pharmacist is the best source of information about your medication. They can provide detailed instructions on its use, potential interactions, and monitoring requirements. Open communication and regular follow-ups are key to ensuring effective treatment.",
+    "Understanding your medication can help you feel more confident in your treatment. Be proactive in asking about the medication’s purpose, timing, side effects, and any activities or substances to avoid. Keeping a list of questions for your doctor can make this process easier."]
+    },
+{
+  "tag": "fact-21",
+  "patterns": [
+    "Where can I go to find therapy?",
+    "How do I find a therapist?",
+    "What are the best ways to access therapy?",
+    "Where can I look for therapy services?",
+    "How do I locate therapy options near me?"
+  ],
+  "responses": [
+    "Finding the right therapy often depends on the mental health condition and personal needs. For example, children may benefit from a therapist specializing in child psychology, while someone managing trauma might look for a professional experienced in trauma-focused therapy. Start by searching for local therapists online, using directories like those provided by mental health organizations.",
+    "Therapy services can be found through recommendations from primary care providers, school counselors, or community mental health centers. Online platforms and telehealth options have also become popular and convenient ways to access therapy.",
+    "The type of therapy you need depends on your specific symptoms and circumstances. Cognitive-behavioral therapy (CBT) is effective for anxiety and depression, while family or couples therapy may focus on relationship issues. Research therapists in your area to find someone with expertise in your specific concerns.",
+    "You can locate therapy services through insurance provider directories, mental health hotlines, or nonprofit organizations. Many regions also have sliding-scale clinics that offer affordable therapy options for those with financial constraints."
+  ]
+},
+{
+  "tag": "fact-22",
+  "patterns": [
+    "Where can I learn about types of mental health treatment?",
+    "What are the types of mental health treatments?",
+    "How can I find information about mental health treatments?",
+    "Where can I explore different mental health treatment options?",
+    "What treatments are available for mental health conditions?"
+  ],
+  "responses": [
+    "Mental health conditions are commonly treated with medication, therapy, or a combination of both. You can learn more about these treatments by consulting mental health professionals, exploring reputable websites like those from mental health organizations, or speaking with your healthcare provider.",
+    "There are many treatment options for mental health, including traditional approaches like psychotherapy and medication. Additional options include Complementary and Alternative Treatments such as meditation, acupuncture, or yoga, self-help strategies like journaling or goal setting, and peer support through support groups or community programs.",
+    "To learn about different treatments, consider resources such as online directories, informational guides from mental health organizations, or consultations with mental health professionals. They can provide tailored advice based on specific conditions or symptoms.",
+    "Mental health treatments are very personal and should be discussed with a healthcare provider. Options range from medication and therapy to holistic approaches like lifestyle changes and mindfulness practices. Collaborating with a care team ensures the best approach for the individual's needs."
+  ]
+},
+{
+  "tag": "fact-23",
+  "patterns": [
+    "What are the different types of mental health professionals?",
+    "Who are the mental health specialists?",
+    "What kinds of mental health providers are there?",
+    "Can you explain the types of mental health professionals?",
+    "What are the roles of different mental health professionals?"
+  ],
+  "responses": [
+    "There are several types of mental health professionals, each specializing in different aspects of mental health care. Psychiatrists are medical doctors who diagnose and treat mental health conditions and can prescribe medication. Psychologists focus on therapy and assessments, often providing talk therapy or cognitive-behavioral therapy (CBT).",
+    "Mental health providers include licensed therapists or counselors, such as Licensed Clinical Social Workers (LCSWs) and Licensed Professional Counselors (LPCs), who offer therapy for emotional and behavioral issues. Psychiatric Nurse Practitioners can prescribe medication and provide therapy in some cases.",
+    "Social workers help clients manage life challenges and access resources. Clinical social workers can also provide therapy. Additionally, peer specialists offer support based on their lived experiences with mental health challenges and recovery.",
+    "Finding the right mental health professional depends on your needs. For medication management, a psychiatrist or psychiatric nurse practitioner may be appropriate. For therapy, a psychologist, counselor, or social worker might be the best fit. Researching their expertise and specializations can help guide your decision."
+  ]
+},
+{
+  "tag": "fact-24",
+  "patterns": [
+    "Where can I go to find a support group?",
+    "How do I find a mental health support group?",
+    "What are some ways to join a support group?",
+    "Where can I access support groups for mental health?",
+    "How can I connect with a support group for mental health issues?"
+  ],
+  "responses": [
+    "Peer support groups are an excellent resource for recovery and connection. Many organizations, such as local community centers, hospitals, and mental health nonprofits, offer support groups for individuals with mental health conditions, their family members, and friends. You can start by researching online directories or reaching out to nearby mental health facilities.",
+    "Support groups are available in many forms. Some are peer-led, where individuals share personal experiences and coping strategies, while others are facilitated by mental health professionals. Look for organizations like NAMI (National Alliance on Mental Illness) or Mental Health America for resources and local group listings.",
+    "Online support groups have become increasingly popular and accessible. Websites, apps, and social media platforms often host virtual communities where individuals can share experiences and find encouragement. These options can be especially helpful if local resources are limited.",
+    "Finding a support group that fits your needs may require some research. Consider factors like the group’s focus (e.g., specific mental health conditions or family support), its format (in-person or online), and whether it is peer-led or professionally facilitated. Community resource directories and mental health hotlines can also provide guidance."
+  ]
+},
+{
+  "tag": "fact-25",
+  "patterns": [
+    "Can you prevent mental health problems?",
+    "Is it possible to avoid mental health issues?",
+    "How can I reduce the risk of mental health problems?",
+    "Are mental health challenges preventable?",
+    "What can I do to prevent mental health issues?"
+  ],
+  "responses": [
+    "While not all mental health problems can be fully prevented, taking proactive steps can reduce the risk or severity of challenges. Building resilience, maintaining a healthy lifestyle, and developing strong social connections are all key to supporting mental well-being.",
+    "Preventing mental health problems often involves managing stress effectively, practicing mindfulness, and seeking support early when challenges arise. Early intervention can make a big difference in preventing issues from becoming more serious.",
+    "Engaging in self-care activities, such as regular exercise, eating a balanced diet, and getting enough sleep, can help promote mental health and prevent some issues. Developing coping skills and maintaining positive relationships also play an important role.",
+    "While we can’t always prevent mental health challenges, fostering a sense of well-being and resilience can help. Seeking help early, whether through therapy, peer support, or trusted friends and family, can prevent small challenges from becoming major concerns."
+  ]
+},
+{
+  "tag": "fact-26",
+  "patterns": [
+    "Are there cures for mental health problems?",
+    "Is there any cure for mental health problems?",
+    "Can mental health issues be cured?",
+    "Are mental health disorders curable?",
+    "What treatments can completely cure mental health problems?"
+  ],
+  "responses": [
+    "Mental health problems often require ongoing management rather than a definitive cure. The focus is typically on finding effective strategies to improve well-being and quality of life. Talking therapies, such as counseling or psychotherapy, are often a cornerstone of managing mental health challenges.",
+    "Rather than seeking a single cure, it's helpful to explore what works best for your specific situation. Approaches like medication, exercise, good sleep hygiene, balanced nutrition, meaningful relationships, and stress management can all contribute to recovery and improved mental health.",
+    "While mental health conditions may not always have a cure in the traditional sense, many people experience significant relief from symptoms through therapy, medication, and lifestyle changes. It's important to work with a mental health professional to create a personalized treatment plan.",
+    "Recovery is often about managing symptoms and building resilience rather than eliminating a condition entirely. Practices like mindfulness, building supportive relationships, engaging in hobbies, and maintaining a healthy lifestyle can all make a meaningful difference in living a fulfilling life."
+  ]
+},
+{
+  "tag": "fact-27",
+  "patterns": [
+    "What causes mental health problems?",
+    "Why do mental health issues occur?",
+    "What leads to mental health disorders?",
+    "Can you explain the causes of mental health conditions?",
+    "What are the reasons for mental health challenges?"
+  ],
+  "responses": [
+    "Mental health problems can result from a combination of psychological, biological, and social factors. For example, traumatic life events, chronic stress, or unresolved emotional issues can contribute to mental health challenges.",
+    "Biological factors, such as genetic predispositions, chemical imbalances in the brain, or physical illnesses, can play a significant role in the development of mental health conditions. For example, a family history of mental illness may increase risk.",
+    "Social and environmental factors, like experiences of abuse, neglect, or isolation, as well as major life changes or economic hardships, can contribute to mental health problems. A lack of social support can also exacerbate these challenges.",
+    "It's important to note that mental health problems often arise from a complex interplay of multiple factors, rather than a single cause. Seeking professional guidance can help identify specific contributing factors and provide effective strategies for management and recovery."
+  ]
+},
+{
+  "tag": "fact-28",
+  "patterns": [
+    "What do I do if I'm worried about my mental health?",
+    "How do I handle concerns about my mental health?",
+    "What steps should I take if I'm struggling mentally?",
+    "Who can I talk to if I'm worried about my mental health?",
+    "How can I address my mental health concerns?"
+  ],
+  "responses": [
+    "If you're worried about your mental health, the most important step is to talk to someone you trust. This could be a friend, family member, colleague, or a healthcare professional. Sharing your concerns can help you feel less isolated and may provide valuable support.",
+    "Consider reaching out to a healthcare provider or mental health professional, such as a therapist or counselor. They can help you understand what you’re experiencing and guide you toward effective treatment or coping strategies.",
+    "It can also be helpful to educate yourself about mental health. Researching what you’re experiencing may provide perspective and help you feel more empowered. Reputable mental health websites and resources can offer valuable insights.",
+    "Taking small steps like practicing self-care, maintaining a routine, and focusing on healthy habits like exercise and proper sleep can also support your mental health while you seek further assistance."
+  ]
+},
+{
+  "tag": "fact-29",
+  "patterns": [
+    "How do I know if I'm unwell?",
+    "What are the signs that I might be mentally unwell?",
+    "How can I tell if I need mental health support?",
+    "What are the indicators of being mentally unwell?",
+    "How do I recognize if I need help with my mental health?"
+  ],
+  "responses": [
+    "You might be mentally unwell if your thoughts, feelings, or behaviors significantly interfere with your daily life or ability to function as you normally would. This could include struggling to maintain relationships, work, or self-care routines.",
+    "If you notice persistent feelings of sadness, anxiety, irritability, or confusion that make it hard to focus or cope with daily activities, it’s important to seek help from a trusted professional or support network.",
+    "Signs of being unwell can include drastic changes in mood, energy levels, or sleep patterns, as well as withdrawing from social connections or feeling overwhelmed by stress. If these issues persist or worsen, reaching out for support is a good step.",
+    "Mental health challenges often feel isolating, but recognizing them is the first step. If you’re unsure, consider talking to a mental health professional who can provide clarity and guidance tailored to your situation."
+  ]
+},
+    {"tag": "fact-30",
+    "patterns": ["How can I maintain social connections? What if I feel lonely?",
+    "How do I stay connected with others?",
+    "What are the best ways to connect with people?",
+    "How can I strengthen my social ties?",
+    "How do I build meaningful relationships?",
+    "What can I do to feel more connected to others?",
+    "What steps can I take to improve my social life?",
+    "What can I do to meet new people?",
+    "How can I reach out to others if I feel shy or hesitant?"
+],
+        "responses": ["A lot of people are alone right now, but we don't have to be lonely. We're all in this together. Think about the different ways to connect that are most meaningful for you. For example, you might prefer a video chat over a phone call, or you might prefer to text throughout the day rather than one set time for a video call. Then, work with your social networks to make a plan. You might video chat with your close friends in the evening and phone a family member once a week. Remember to be mindful of people who may not be online. Check in by phone and ask how you can help. The quality of your social connections matter. Mindlessly scrolling through social media and liking a few posts usually doesn't build strong social connections. Make sure you focus on strategies that actually make you feel included and connected. If your current strategies don't help you feel connected, problem-solve to see if you can find a solution. Everyone feels lonely at times. Maybe you recently moved to a new city, are changing your circle of friends, lost someone important in your life, or lost your job and also lost important social connections with coworkers. Other people may have physical connections to others but may feel like their emotional or social needs aren't met. Measures like social distancing or self-isolation can make loneliness feel worse no matter why you feel lonely now. Reach out to the connections you do have. Suggest ways to keep in touch and see if you can set a regular time to connect. People may hesitate to reach out for a lot of different reasons, so don't be afraid to be the one who asks. Look for local community support groups and mutual aid groups on social media. This pandemic is bringing everyone together, so look for opportunities to make new connections. These groups are a great way to share your skills and abilities or seek help and support. Look for specialized support groups. Support groups are moving online, and there are a lot of different support lines to call if you need to talk to someone.",
+ "Loneliness is something many people experience, but there are ways to stay connected and feel supported. Start by thinking about how you prefer to connect—video calls, phone calls, or texting throughout the day. Reach out to your social network and make a plan. For example, schedule a weekly video chat with close friends or regular phone calls with family members.",
+    "Focus on meaningful social connections. Mindlessly scrolling through social media may not fulfill your emotional needs. Instead, engage in activities that make you feel included, such as joining online communities, participating in group activities, or sharing your interests with others.",
+    "If you feel lonely, don’t hesitate to reach out to the connections you already have. Suggest ways to keep in touch and set regular times to connect. People often hesitate to reach out, so be the one to initiate contact. Local community support groups or mutual aid groups on social media can also help you connect with others and build new relationships.",
+    "Consider specialized support groups, especially if you’re feeling isolated. Many of these groups have moved online, providing opportunities to share experiences and find understanding. Additionally, support lines and hotlines are available if you need someone to talk to. Exploring new ways to connect can help reduce loneliness and create a sense of belonging."]
+    },
+ {
+  "tag": "fact-31",
+  "patterns": [
+    "What's the difference between anxiety and stress?",
+    "How are anxiety and stress different?",
+    "What distinguishes stress from anxiety?",
+    "Can you explain the difference between stress and anxiety?",
+    "How do I know if I’m feeling stress or anxiety?"
+  ],
+  "responses": [
+    "Stress and anxiety are often confused because they share similar physical symptoms, like increased heart rate or tension, but they are not the same. Stress is typically a response to external pressures or demands that you find difficult to manage, like deadlines or conflicts. It usually goes away once the stressful situation is resolved.",
+    "Anxiety, on the other hand, is more internal and involves ongoing worries or fears, often about things that might happen in the future. While stress usually has an identifiable cause, anxiety can occur without a clear trigger and may involve excessive concern about the anxiety itself.",
+    "Stress is a temporary state triggered by specific situations or external pressures, whereas anxiety tends to persist longer and may not have an obvious cause. Both are natural human experiences, but they can become problematic if they last too long or significantly affect your daily life.",
+    "The key difference between stress and anxiety lies in their focus: stress is a reaction to current challenges, while anxiety often revolves around future uncertainties or perceived threats. If either starts impacting your well-being or daily activities, it’s a good idea to seek support."
+  ]
+},
+{
+  "tag": "fact-32",
+  "patterns": [
+    "What's the difference between sadness and depression?",
+    "Difference between sadness and depression",
+    "How is sadness different from depression?",
+    "Can you explain the distinction between sadness and depression?",
+    "Is sadness the same as depression?"
+  ],
+  "responses": [
+    "Sadness is a normal emotional reaction to challenges such as loss, disappointment, or other difficult situations. It is a part of being human and typically passes on its own without significantly interfering with daily life. Terms like 'feeling low' or 'feeling blue' are often used to describe sadness, and these feelings usually resolve with time or changes in circumstances.",
+    "Depression, on the other hand, is a mental health condition that affects your mood, thoughts, and how you relate to yourself and the world around you. Unlike sadness, depression can occur without a clear cause, lasts for a long time, and significantly impacts daily life. It is more than just a low mood and often involves feelings of worthlessness, hopelessness, or excessive guilt.",
+    "While sadness is temporary and doesn't typically disrupt your ability to function, depression may cause symptoms such as loss of interest in activities, difficulty concentrating, changes in appetite or sleep, and unexplained physical pain. In severe cases, depression may lead to thoughts of death or suicide. If these symptoms persist for more than two weeks and interfere with daily life, it is important to seek professional help.",
+    "Depression is a treatable condition, and recognizing the difference between it and sadness is crucial. While sadness resolves on its own, depression often requires intervention, such as therapy, medication, or support. If you're unsure whether you or someone you know is experiencing depression, reaching out to a healthcare professional is an important step."
+  ]
+}
+
+    ]
+}
